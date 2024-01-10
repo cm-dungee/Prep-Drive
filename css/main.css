@@ -117,7 +117,6 @@ h1, h2 {
 	text-shadow: 2px 2px 2px #000;
 }
 
-
 /*==HEADER==*/
 header {
 	height: 150px;
@@ -744,17 +743,15 @@ sup {
 	width: 70%;
 	margin-top: -350px;
 	margin-left: 400px;
+	color: #F2F2F2;	
+}
+
+.nursing-wrapper {
+	padding-bottom: 50px;
 }
 
 .nursing-info {
 	margin-bottom: 50px;
-	color: #F2F2F2;
-}
-
-.nursing-wrapper {
-	display: flex;
-	flex-direction: column;
-	color: #FFCF06;
 }
 
 .nurs-row1 {
@@ -763,12 +760,38 @@ sup {
 	border: 1px solid #F2F2F2;
 	background-color: rgba(0,0,0,.2);
 	padding: 20px;
+	margin-bottom: 50px;
 }
 
+.nurs-row2 {
+	display: flex;
+	justify-content: space-around;
+	border: 1px solid #F2F2F2;
+	background-color: rgba(0,0,0,.2);
+	line-height: 2.5;
+	padding: 20px;
+}
 
+.nursing-main a:link {
+	color: #FFCF01;
+	text-decoration: none;
+}
 
+.nursing-main a:visited {
+	color: #FFCF01;
+}
 
+.nursing-main a:hover {
+	color: #F2F2F2;
+}
 
+.nursing-main a:active {
+	color: #FFCF01;
+}
+
+.indent4 {
+	text-indent: 40px;
+}
 
 
 

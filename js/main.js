@@ -135,3 +135,20 @@ document.addEventListener('click', function (event) {
 	toggle(content);
 
 }, false);
+
+// HIDE/SHOW TRANSFER PREP LISTS --------------------------------------------------------------------------------------------------------------------------------------
+
+var coll = document.getElementsByClassName("prep-collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("prep-active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}

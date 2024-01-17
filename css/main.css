@@ -214,7 +214,7 @@ header h1 {
 }
 
 .fly-active {
-	background-color: rgba(0,0,0,.1);
+	background-color: rgba(255,255,255,.1);
 }
 
 /*----------------------------------------------------HOME PAGE---------------------------------------------------*/
@@ -232,6 +232,104 @@ header h1 {
 
 .home-main h2 {
 	margin-bottom: 10px;
+}
+
+/*----------------------------------------------------SEARCH ENGINES PAGE---------------------------------------------------*/
+.engines-main {
+	height: 100%;
+	width: 70%;
+	margin-top: -350px;
+	margin-left: 400px;
+}
+
+.engines-info {
+	color: #F2F2F2;
+	margin-bottom: 50px;
+}
+
+.engines-main a:link {
+	color: #FFCF01;
+	text-decoration: none;
+}
+
+.engines-main a:visited {
+	color: #FFCF01;
+}
+
+.engines-main a:hover {
+	color: #F2F2F2;
+}
+
+.engines-main a:active {
+	color: #FFCF01;
+}
+
+/*----------------------------------------------------SCHOLARSHIP FINDERS PAGE---------------------------------------------------*/
+.scholar-main {
+	height: 100%;
+	width: 70%;
+	margin-top: -350px;
+	margin-left: 400px;
+	color: #F2F2F2;
+}
+
+.scholar-info {
+	margin-bottom: 50px;
+}
+
+.scholar-wrapper {
+	line-height: 2;
+}
+
+.scholar-main a:link {
+	color: #FFCF01;
+	text-decoration: none;
+}
+
+.scholar-main a:visited {
+	color: #FFCF01;
+}
+
+.scholar-main a:hover {
+	color: #F2F2F2;
+}
+
+.scholar-main a:active {
+	color: #FFCF01;
+}
+
+/*----------------------------------------------------TRANSFER TOOLS PAGE---------------------------------------------------*/
+.tools-main {
+	height: 100%;
+	width: 70%;
+	margin-top: -350px;
+	margin-left: 400px;
+	color: #F2F2F2;
+}
+
+.tools-info {
+	margin-bottom: 50px;
+}
+
+.tools-wrapper {
+	line-height: 2;
+}
+
+.tools-main a:link {
+	color: #FFCF01;
+	text-decoration: none;
+}
+
+.tools-main a:visited {
+	color: #FFCF01;
+}
+
+.tools-main a:hover {
+	color: #F2F2F2;
+}
+
+.tools-main a:active {
+	color: #FFCF01;
 }
 
 
@@ -690,6 +788,51 @@ header h1 {
 .shared-main a:hover, a:active {
 	background-color: #0C4370;
 }
+
+/*----------------------------------------------------ON-CAMPUS EVENTS PAGE---------------------------------------------------*/
+.campevents-main {
+	height: 100%;
+	width: 70%;
+	margin-top: -350px;
+	margin-left: 400px;
+	color: #F2F2F2;
+}
+
+.campevents-info {
+	margin-bottom: 50px;
+}
+
+.visitscal {
+	border: none;
+	height: 500px;
+	width: 100%;
+	
+}
+
+/* .campevents-info { */
+	/* margin-bottom: 50px; */
+/* } */
+
+/* .campevents-wrapper { */
+	/* line-height: 2; */
+/* } */
+
+/* .campevents-main a:link { */
+	/* color: #FFCF01; */
+	/* text-decoration: none; */
+/* } */
+
+/* .campevents-main a:visited { */
+	/* color: #FFCF01; */
+/* } */
+
+/* .campevents-main a:hover { */
+	/* color: #F2F2F2; */
+/* } */
+
+/* .campevents-main a:active { */
+	/* color: #FFCF01; */
+/* } */
 
 
 /*----------------------------------------------------GEN EDS PAGE---------------------------------------------------*/

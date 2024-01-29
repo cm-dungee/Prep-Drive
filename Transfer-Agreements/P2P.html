@@ -26,59 +26,40 @@
 
 
 <header>
-	<img src="../img/college-logo.png" id="college-logo">
 	<h1>Transfer Office Prep Site</h1>
+	<button class="submit">Submit Prep Info</button>
 </header>
 
-<ul class="fly-menu">
-	<li><a href="../HOME.html">Home</a></li>
-	
-	<li><a href="#">Miscellaneous Info</a>
-		<ul>
-			<li"><a href="../Miscellaneous/ENGINES.html">College Search Engines</a></li>
-			<li><a href="../Miscellaneous/SCHOLAR.html">Scholarship Finders</a></li>
-			<li><a href="../Miscellaneous/TOOLS.html">Transfer Tools</a></li>
-		</ul>
-	</li>
-	
-	<li><a href="../Online-Accel/ONLINE.html">Online or Accelerated Degrees</a></li>
-	
-	<li class="fly-active"><a href="#">Transfer Agreements</a>
-		<ul>
-			<li><a href="TYPES.html">Agreements Types</a></li>
-			<li><a href="DUAL.html">Dual/Guaranteed Admission</a></li>
-			<li><a href="FACT.html">Fact Sheets</a></li>
-			<li><a href="ITE.html">Intent to Enroll Info</a></li>
-			<li class="fly-active"><a href="P2P.html">Program-to-Program</a></li>
-			<li><a href="SHARED.html">Shared Programs</a></li>
-		</ul>
-	</li>
-	
-	<li><a href="#">Transfer Events</a>
-		<ul>
-			<li><a href="../Transfer-Events/VISITS.html">On-campus Visits</a></li>
-			<li><a href="../Transfer-Events/TIM.html">Transfer Information Month</a></li>
-		</ul>
-	</li>
-		
-	<li><a href="#">Transfer Guides</a>
-		<ul>
-			<li><a href="../Transfer-Guides/GENED.html">General Education Guides</a></li>
-			<li><a href="../Transfer-Guides/NURSING.html">Nursing</a></li>
-			<li><a href="../Transfer-Guides/PREP.html">Transfer Prep<sup>TM</sup></a></li>
-		</ul>
-	</li>
-	
-	<li><a href="#">Transfer Training</a></li>
-</ul>
+<div class="sidenav">
+	<!-- <img src="img/college-logo.png" id="college-logo"> -->
+	<a href="../HOME.html">-Home</a>
+	<h4>Miscellaneous Info</h4>
+	<a href="../Miscellaneous/ENGINES.html" class="nav-head">-College Search Engines</a>
+	<a href="../Miscellaneous/SCHOLAR.html" class="nav-head">-Scholarship Finders</a>
+	<a href="../Miscellaneous/TOOLS.html" class="nav-head">-Transfer Tools</a>
+	<a href="../Online-Accel/ONLINE.html">-Online or Accelerated Degrees</p></a>
+	<h4>Transfer Agreements</h4>
+	<a href="DUAL.html" class="nav-head">-Dual/Guaranteed Admission</a></li>
+	<a href="ITE.html" class="nav-head">-Intent to Enroll Info</a>
+	<a href="P2P.html" class="nav-head"><p class="active">-Program-to-Program</p></a>
+	<a href="SHARED.html" class="nav-head">-Shared Programs</a>
+	<h4>Transfer Events</h4>
+	<a href="../Transfer-Events/VISITS.html" class="nav-head">-On-campus Visits/Events</a>
+	<a href="../Transfer-Events/TIM.html" class="nav-head">-Transfer Information Month</a>
+	<h4>Transfer Guides</h4>
+	<a href="../Transfer-Guides/GENED.html" class="nav-head">-General Education Guides</a>
+	<a href="../Transfer-Guides/NURSING.html" class="nav-head">-Nursing</a>
+	<a href="../Transfer-Guides/PREP.html" class="nav-head">-Transfer Prep<sup>TM</sup></a>
+	<a href="../Transfer-Training/TRAINING.html">-Transfer Training</a>
+</div>
 
-<div class="p2p-main">
+<div class="main">
 
-	<div class="p2p-info">
+	<div class="page-title4">
 		<h2>Program-to-Program Guides</h2>
 		<h3>Program-to-Program agreements are pathways that indicate how all courses included in a DCCC major transfer to a partner school's equivalent major. The DCCC major is 100% transferrable, granting students junior status after matriculation.</h3>
-		<h3>Click on a category to view the list of schools. Click on a major or school to open the document.</h3>
-		<p><em>NOTE: Some agreements do not include a course outline.</em></p>
+		<h4>Click on a category to view the list of schools. Click on a major or school to open the document.</h4>
+		<h4><em>NOTE: Some agreements do not include a course outline.</em></h4>
 	</div>
 
 <div class="p2p-tab">
@@ -102,6 +83,8 @@
 		<h3><a href="https://docs.google.com/spreadsheets/d/1sfe7munzptKs-8-M8GlsdC4yj1-hhK3M0yrVgws4XnQ/edit?usp=sharing" target="_blank">Alpha List</a></h3>
 	</div>
 	<div id="Art" class="tabcontent3">
+		<button onClick="printdiv('printable_div_id_P2PArt');" class="print">PRINT</button>
+		<div id="printable_div_id_P2PArt">
 		<div class="p2p-school">
 			<h3><a href="p2ps/Cedar-P2P.pdf" target="_blank">Cedar Crest College</a></h3><br>
 			<p>Theatre</p><br>
@@ -141,9 +124,13 @@
 		<div class="p2p-school">
 			<h3><a href="p2ps/WilmU-P2P.pdf" target="_blank">Wilmington University</a></h3><br>
 			<p>Graphic Design</p><br>
-		</div>			
+		</div>	
+	</div>		
 	</div>
+	
 	<div id="Business" class="tabcontent3">
+		<button onClick="printdiv('printable_div_id_P2PBus');" class="print">PRINT</button>
+		<div id="printable_div_id_P2PBus">
 		<div class="p2p-school">
 			<h3><a href="p2ps/Albright-Buad-P2P.pdf" target="_blank">Albright College</a></h3><br>
 			<p>Business Administration</p><br>
@@ -281,8 +268,12 @@
 			<p>Business Management</p><br>
 			<p>Organizational Leadership</p><br>
 		</div>			
-	</div>		
+	</div>	
+	</div>	
+		
 	<div id="Communications" class="tabcontent3">
+		<button onClick="printdiv('printable_div_id_P2PComm');" class="print">PRINT</button>
+		<div id="printable_div_id_P2PComm">
 		<div class="p2p-school">
 			<h3><a href="p2ps/Cedar-P2P.pdf" target="_blank">Cedar Crest College</a></h3><br>
 			<p>Media Studies</p><br>
@@ -324,7 +315,11 @@
 			<p>Communication</p><br>
 		</div>			
 	</div>	
+	</div>
+	
 	<div id="Computers" class="tabcontent3">
+		<button onClick="printdiv('printable_div_id_P2PCS');" class="print">PRINT</button>
+		<div id="printable_div_id_P2PCS">
 		<div class="p2p-school">
 			<h3><a href="p2ps/CalU-CIS-P2P.pdf" target="_blank">California University of PA</a></h3><br>
 			<p>Computer Information Systems</p><br>
@@ -364,8 +359,12 @@
 			<p>Information Systems Management</p><br>
 			<p>Web Design</p><br>
 		</div>	
-	</div>		
+	</div>	
+	</div>
+	
 	<div id="Criminal" class="tabcontent3">
+		<button onClick="printdiv('printable_div_id_P2PCJ');" class="print">PRINT</button>
+		<div id="printable_div_id_P2PCJ">	
 		<div class="p2p-school">
 			<h3><a href="p2ps/Cedar-P2P.pdf" target="_blank">Cedar Crest College</a></h3><br>
 			<p>Criminal Justice</p><br>
@@ -416,8 +415,12 @@
 			<p><a href="p2ps/WilmU-P2P.pdf" target="_blank">Criminal Justice</a></p><br>
 			<p><a href="p2ps/WilmU-Legal-P2P.pdf" target="_blank">Law, Policy, and Political Science - Legal Studies</a></p><br>
 		</div>			
-	</div>	
+	</div>
+	</div>
+	
 	<div id="Education" class="tabcontent3">
+		<button onClick="printdiv('printable_div_id_P2PEDUC');" class="print">PRINT</button>
+		<div id="printable_div_id_P2PEDUC">	
 		<div class="p2p-school">
 			<h3><a href="p2ps/Arcadia-ElEd-P2P.pdf" target="_blank">Arcadia University</a></h3><br>
 			<p>Early Education PreK-4 + Special Education K-8</p><br>
@@ -469,8 +472,12 @@
 			<p>Early Childhood Education PreK-4</p><br>
 			<p>Education Studies</p><br>
 		</div>			
-	</div>		
+	</div>
+	</div>
+	
 	<div id="Engineering" class="tabcontent3">
+		<button onClick="printdiv('printable_div_id_P2PEGR');" class="print">PRINT</button>
+		<div id="printable_div_id_P2PEGR">	
 		<div class="p2p-school">
 			<h3><a href="p2ps/Arcadia-Math-P2P.pdf" target="_blank">Arcadia University</a></h3><br>
 			<p>Mathematics</p><br>
@@ -518,8 +525,12 @@
 			<p><a href="p2ps/Widener-MechEGR-P2P.pdf" target="_blank">Mechanical Engineering</a></p><br>
 			<p><a href="p2ps/Widener-RoboticsEGR-P2P.pdf" target="_blank">Robotics Engineering</a></p><br>
 		</div>		
-	</div>		
+	</div>	
+	</div>
+	
 	<div id="Health" class="tabcontent3">
+		<button onClick="printdiv('printable_div_id_P2PHeal');" class="print">PRINT</button>
+		<div id="printable_div_id_P2PHeal">	
 		<div class="p2p-school">
 			<h3><a href="p2ps/Cedar-P2P.pdf" target="_blank">Cedar Crest College</a></h3><br>
 			<p>Exercise Science</p><br>
@@ -572,7 +583,11 @@
 			<p>RN-BSN</p><br>
 		</div>		
 	</div>		
+	</div>
+	
 	<div id="Humanities" class="tabcontent3">
+		<button onClick="printdiv('printable_div_id_P2PHum');" class="print">PRINT</button>
+		<div id="printable_div_id_P2PHum">	
 		<div class="p2p-school">
 			<h3><a href="p2ps/Cedar-P2P.pdf" target="_blank">Cedar Crest College</a></h3><br>
 			<p>English</p><br>
@@ -608,8 +623,12 @@
 			<p><a href="p2ps/Widener-Eng-P2P.pdf" target="_blank">English</a></p><br>
 			<p><a href="p2ps/Widener-His-P2P.pdf" target="_blank">History</a></p><br>
 		</div>		
-	</div>		
+	</div>	
+	</div>
+	
 	<div id="NatSci" class="tabcontent3">
+		<button onClick="printdiv('printable_div_id_P2PNat');" class="print">PRINT</button>
+		<div id="printable_div_id_P2PNat">	
 		<div class="p2p-school">
 			<h3><a href="p2ps/Cedar-P2P.pdf" target="_blank">Cedar Crest College</a></h3><br>
 			<p>Biochemistry</p><br>
@@ -642,8 +661,12 @@
 			<h3><a href="p2ps/WCU-Bio-P2P.pdf" target="_blank">West Chester University</a></h3><br>
 			<p>Biology - Cell & Molecular</p><br>
 		</div>		
-	</div>		
+	</div>
+	</div>	
+
 	<div id="Social" class="tabcontent3">
+		<button onClick="printdiv('printable_div_id_P2PSoc');" class="print">PRINT</button>
+		<div id="printable_div_id_P2PSoc">	
 		<div class="p2p-school">
 			<h3><a href="p2ps/Albright-Psych-P2P.pdf" target="_blank">Albright College</a></h3><br>
 			<p>Organizational Behavior/Applied Psychology</p><br>
@@ -711,38 +734,43 @@
 			<p>Interdisciplinary Studies</p><br>
 			<p>Psychology</p><br>
 		</div>		
-	</div>	
+	</div>
+	</div>
+	
 	<div id="State" class="tabcontent3">
+		<button onClick="printdiv('printable_div_id_P2PPA');" class="print">PRINT</button>
+		<div id="printable_div_id_P2PPA">	
 		<h3>Two- and four-year PA state owned universities and colleges use Statewide P2P Agreements to align certain associate degrees with the first 60 credits of bachelor’s degrees in popular programs of study. Use the <a href="https://www.patrac.org/Student/Find-Statewide-Program-to-Program-Agreements" target="_blank">PA TRAC database</a> to search for eligible connected degrees.</h3>
 		<br>
 		<p>Eligible Programs of Study:</p>
+		<p style="font-size:16px"><em>*no connected DCCC major</em></p>
 		<br>
 		<div id="statep2p">
 			<div>
 				<p>Art</p>
-				<p>Biology</p>
+				<p>Biology*</p>
 				<p>Business</p>
-				<p>Chemistry</p>
+				<p>Chemistry*</p>
 				<p>Communications</p>
 				<p>Computer Science</p>
 				<p>Criminal Justice</p>
-				<p>Eartn Science</p>
+				<p>Eartn Science*</p>
 				<p>Education: PreK-4</p>
 			</div>
 			<div>
 				<p>English</p>
-				<p>Environmental Geoscience</p>
-				<p>Environmental Science</p>
-				<p>Geography</p>
-				<p>Geology</p>
+				<p>Environmental Geoscience*</p>
+				<p>Environmental Science*</p>
+				<p>Geography*</p>
+				<p>Geology*</p>
 				<p>History</p>
 				<p>Mathematics and Statistics</p>
-				<p>Meteorology</p>
-				<p>Modern Languages</p>
+				<p>Meteorology*</p>
+				<p>Modern Languages*</p>
 			</div>
 			<div>
-				<p>Physical Oceanography</p>
-				<p>Physics</p>
+				<p>Physical Oceanography*</p>
+				<p>Physics*</p>
 				<p>Political Science</p>
 				<p>Psychology</p>
 				<p>Social Work</p>
@@ -752,6 +780,8 @@
 			
 		</div>
 	</div>
+	</div>
+	
 </div>
 
 

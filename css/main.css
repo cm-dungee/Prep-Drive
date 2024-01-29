@@ -106,6 +106,7 @@ body {
 	background-color: #333;
 	margin: 0;
 	padding: 0;
+	width: 100%;
 }
 
 
@@ -123,232 +124,173 @@ sup {
 
 /*==HEADER==*/
 header {
-	height: 150px;
-	width: 100%;
-	/* position: fixed; */
 	top: 0;
-	left: 0;
-	z-index: 1;
-	background-color: rgba(26,88,140,.6);
+	margin-left: 325px;
+	/* padding: 10px 16px; */
+	background-color: rgba(16,90,150,0.4);
 	display: flex;
 	align-items: center;
-	padding: 50px;
-}
-
-#college-logo {
-	height: 114px;
-	width: 250px;
-	flex: 10%;
-	margin-right: 50px;
+	justify-content: space-around;
 }
 
 header h1 {
-	flex: 80% ;
 	color: #F2F2F2;
-	font-size: 40px;
+	font-size: 35px;
+}
+
+.submit {
+	padding: 10px;
+	background-color: #FFCF06;
+	color: #105A96;
+	font-weight: bold;
+	border-radius: 20px;
+	border: none;
+	outline: none;
+	box-shadow: 0 9px #3A3A3A;
+	cursor: pointer;
+}
+
+.submit:hover {background-color: #B89404}
+
+.submit:active {
+  background-color: #B89404;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 /*==NAVIGATION MENU==*/
-.fly-menu {
+.sidenav {
 	height: 100%;
-	width: 300px;
-	margin-top: 30px;
-	padding-top: 10px;
-	padding-left: 20px;
+	width: 325px;
+	position: fixed;
+	/* z-index: 1; */
+	top: 0; 
+	overflow-x: hidden;
+	background-color: rgba(16,90,150,0.4);
+	line-height: 1.8;
+	padding-top: 15px;
 }
 
-.fly-menu li {
-	position: relative;
-	display: block;
-}
-
-.fly-menu li ul {
-	position: absolute;
-	width: 100%;
-	display: none;
-}
-
-.fly-menu a {
-	display: block;
-	width: 100%;
-	padding-bottom: 20px;
-	color: #FFF;
-	font-size: 20px;
-	transition: all 0.3s ease;
+.sidenav a {
+	padding: 5px 8px;
 	text-decoration: none;
-	text-align: left;
-	margin-top: 5px;
-	cursor: pointer;
-	outline: none;
+	font-size: 16px;
+	color: #FFF;
+	display: block;
 }
 
-
-.fly-menu a:hover {
-	display: block;
+.sidenav a:hover {
 	color: #FFCF06;
 }
 
-.fly-menu a:after {
-	background: none repeat scroll 0 0 transparent;
-	bottom: 0;
-	content: "";
-	display: block;
-	height: 2px;
-	position: absolute;
-	background: #F2F2F2;
-	transition: width 0.3s ease 0s, left 0.3s ease 0s;
-	width: 0;
+.sidenav h4 {
+	padding: 5px 8px;
+	color: #FFF;
+	/* font-style: italic; */
+	/* text-decoration: underline; */
+	text-transform: uppercase;
+	font-weight: normal;
 }
 
-.fly-menu a:hover:after { 
-	width: 50%; 
-	left: 5px; 
+.nav-head {
+	text-indent: 25px;
 }
 
-.fly-menu li:hover ul {
-	display: block;
-	transform: translate(250px, -45px);
-	border: 1px solid #F2F2F2;
-	background-color: #333;
+.active {
+	color: #FFCF06;
+	font-weight: bold;
+}
+
+#college-logo {
+	height: 80px;
+	width: 175px;
+	margin-bottom: 40px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+/*==CONTENT WINDOW==*/
+.main {
+	margin-left: 325px;
+	padding: 30px;
+	height: 100%;
+	width: auto;
+	color: #FFF;
+}
+
+.page-title {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+/*==PRINT BUTTON==*/
+.print {
+	width: 100px;
 	padding: 5px;
-}
-
-.fly-active {
-	background-color: rgba(255,255,255,.1);
+	background-color: #FFCF06;
+	color: #105A96;
+	font-weight: bold;
+	border-radius: 20px;
+	border: none;
+	outline: none;
+	box-shadow: 0 9px #3A3A3A;
+	cursor: pointer;
+	margin-bottom: 25px;
 }
 
 /*----------------------------------------------------HOME PAGE---------------------------------------------------*/
-.home-main {
-	height: 100%;
-	width: auto;
-	margin-top: -350px;
-	margin-left: 300px;
-	color: #F2F2F2;
+.home-content {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	font-size: 25px;
-}
-
-.home-main h2 {
-	margin-bottom: 10px;
 }
 
 /*----------------------------------------------------SEARCH ENGINES PAGE---------------------------------------------------*/
-.engines-main {
-	height: 100%;
-	width: 70%;
-	margin-top: -350px;
-	margin-left: 400px;
-}
-
-.engines-info {
-	color: #F2F2F2;
-	margin-bottom: 50px;
-}
-
-.engines-main a:link {
-	color: #FFCF01;
+.engines-wrapper a {
+	color: #FFF;
 	text-decoration: none;
+	font-weight: bold;
 }
 
-.engines-main a:visited {
-	color: #FFCF01;
-}
-
-.engines-main a:hover {
-	color: #F2F2F2;
-}
-
-.engines-main a:active {
-	color: #FFCF01;
+.engines-wrapper a:hover {
+	color: #FFCF06;
+	text-decoration: none;
 }
 
 /*----------------------------------------------------SCHOLARSHIP FINDERS PAGE---------------------------------------------------*/
-.scholar-main {
-	height: 100%;
-	width: 70%;
-	margin-top: -350px;
-	margin-left: 400px;
-	color: #F2F2F2;
-}
-
-.scholar-info {
-	margin-bottom: 50px;
-}
-
-.scholar-wrapper {
-	line-height: 2;
-}
-
-.scholar-main a:link {
-	color: #FFCF01;
+.scholar-wrapper a {
+	color: #FFF;
 	text-decoration: none;
+	font-weight: bold;
 }
 
-.scholar-main a:visited {
-	color: #FFCF01;
-}
-
-.scholar-main a:hover {
-	color: #F2F2F2;
-}
-
-.scholar-main a:active {
-	color: #FFCF01;
+.scholar-wrapper a:hover {
+	color: #FFCF06;
 }
 
 /*----------------------------------------------------TRANSFER TOOLS PAGE---------------------------------------------------*/
-.tools-main {
-	height: 100%;
-	width: 70%;
-	margin-top: -350px;
-	margin-left: 400px;
-	color: #F2F2F2;
-}
-
-.tools-info {
-	margin-bottom: 50px;
-}
-
-.tools-wrapper {
-	line-height: 2;
-}
-
-.tools-main a:link {
-	color: #FFCF01;
+.tools-wrapper a {
+	color: #FFF;
 	text-decoration: none;
+	font-weight: bold;
 }
 
-.tools-main a:visited {
-	color: #FFCF01;
-}
-
-.tools-main a:hover {
-	color: #F2F2F2;
-}
-
-.tools-main a:active {
-	color: #FFCF01;
+.tools-wrapper a:hover {
+	color: #FFCF06;
 }
 
 
 /*----------------------------------------------------ONLINE PAGE---------------------------------------------------*/
-.online-main {
-	height: 100%;
-	width: 70%;
-	margin-top: -350px;
-	margin-left: 400px;
-}
-
-.online-info {
+.page-title2 {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	color: #F2F2F2;
-	line-height: 2;
-	height: 250px;
-	margin-bottom: 50px;
+	margin-bottom: 60px;
+	height: 200px;
+}
+
+.page-title2 h2 {
+	text-align: center;
 }
 
 .online-tab {
@@ -359,13 +301,14 @@ header h1 {
 
 .online-tab button {
 	background-color: inherit;
-	color: #F2F2F2;
+	color: #fff;
 	float: left;
 	border: none;
 	outline: none;
 	cursor: pointer;
 	padding: 14px 16px;
 	transition: 0.3s;
+	font-size: 17px;
 }
 
 .online-tab button:hover {
@@ -388,79 +331,96 @@ header h1 {
 .tabcontent1 {
 	display: none;
 	width: 100%;
-	padding-left: 100px;
-	padding-top: 50px;
+	padding-left: 40px;
+	padding-top: 40px;
 	padding-bottom: 50px;
 	border: 1px solid #ccc;
 	border-top: none;
 	color: #333;
-	background-color: #F2F2F2;
+	background-color: #fff;
 }
 
 .online-school {
 	padding-bottom: 50px;
 }
 
-.indent {
+.online-indent {
 	text-indent: 30px;
 	font-style: italic;
 }
 
-
-
-/*----------------------------------------------------AGREEMENT TYPES PAGE---------------------------------------------------*/
-.types-main {
-	height: 100%;
-	width: 70%;
-	margin-top: -350px;
-	margin-left: 400px;
-}
-
-.types-info {
-	color: #F2F2F2;
-	line-height: 2;
-}
-
-.types-font {
-	font-weight: 200;
-}
-
-
 /*----------------------------------------------------DUAL/GUARANTEED PAGE---------------------------------------------------*/
-.dual-main {
-	height: 100%;
-	width: 70%;
-	margin-top: -350px;
-	margin-left: 400px;
+.page-title3 {
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 60px;
+	height: 230px;
 }
 
-.dual-wrapper a:link {
+.page-title3 h2 {
+	text-align: center;
+}
+
+#dual-button {
+	width: 200px;
+	padding: 10px;
+	background-color: transparent;
+	color: #FFF;
+	outline: 2px solid #FFF;
+	outline-style: inset;
+	font-style: italic; 
+}
+
+#dual-button:hover {
+	background-color: #FFCF06;
+	color: #333;
+}
+
+.modal1 {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal1-content {
+	background-color: #FFF;
+	color: #000;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	line-height: 2;
+	width: 80%;
+}
+
+.close1 {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.dual-wrapper a {
 	color: #FFCF06;
 	text-decoration: none;
 }
 
-.dual-wrapper a:visited {
-	color: #FFCF06;	
-}
-
 .dual-wrapper a:hover {
 	color: #333;	
-}
-
-.dual-wrapper a:active {
-	color: #333;	
-}
-
-.dual-info {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	color: #F2F2F2;
-	line-height: 2;
-	height: 150px;
-	margin-bottom: 50px;
 }
 
 .dual-tab {
@@ -471,7 +431,7 @@ header h1 {
 
 .dual-tab button {
 	background-color: inherit;
-	color: #F2F2F2;
+	color: #fff;
 	float: left;
 	border: none;
 	outline: none;
@@ -503,7 +463,7 @@ header h1 {
 	width: 100%;
 	height: 100%;
 	padding: 5px;
-	color: #F2F2F2;
+	color: #fff;
 }
 
 .tab-wrapper {
@@ -534,76 +494,34 @@ header h1 {
 }
 
 
-/*----------------------------------------------------FACT SHEETS PAGE---------------------------------------------------*/
-.fact-main {
-	height: 100%;
-	width: 70%;
-	margin-top: -350px;
-	margin-left: 400px;
-}
-
-.fact-info {
-	color: #F2F2F2;
-	line-height: 2;
-	height: 150px;
+/*----------------------------------------------------INTENT TO ENROLL FORMS PAGE---------------------------------------------------*/
+.ITE-wrapper {
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	margin-bottom: 50px;
-}
-
-.fact-list {
-	display: flex;
-	flex-flow: row wrap;
 	justify-content: space-around;
-	height: 350px;
+	line-height: 2.3;
 }
 
-.factCol1, .factCol2 {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.fact-list a:link {
-	color: #FFCF06;
+.ITE-wrapper a {
+	color: #FFF;
 	text-decoration: none;
+	font-weight: bold;
 }
 
-.fact-list a:visited {
-	color: #FFCF06;	
-}
-
-.fact-list a:hover {
-	color: #F2F2F2;	
-}
-
-.fact-list a:active {
-	color: #333;	
-}
-
-.fact-list p {
-	font-size: 18px;
+.ITE-wrapper a:hover {
+	color: #FFCF06;
 }
 
 /*----------------------------------------------------PROGRAM-TO-PROGRAM PAGE---------------------------------------------------*/
-.p2p-main {
-	height: 100%;
-	width: 70%;
-	margin-top: -350px;
-	margin-left: 400px;
-	padding-bottom: 100px;
-}
-
-
-.p2p-info {
-	color: #F2F2F2;
-	line-height: 2;
-	height: 350px;
+.page-title4 {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin-bottom: 50px;
+	margin-bottom: 60px;
+	height: 250px;
+}
+
+.page-title4 h2 {
+	text-align: center;
 }
 
 .p2p-tab {
@@ -614,7 +532,7 @@ header h1 {
 
 .p2p-tab button {
 	background-color: inherit;
-	color: #F2F2F2;
+	color: #fff;
 	float: left;
 	border: none;
 	outline: none;
@@ -640,6 +558,20 @@ header h1 {
 	align-items:center;
 }
 
+.p2p-wrapper a {
+	color: #105A96;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.p2p-wrapper a:visited {
+	color: #105A96;
+}
+
+.p2p-wrapper a:hover {
+	color: #FFCF06;
+}
+
 .tabcontent3 {
 	display: none;
 	width: 100%;
@@ -650,28 +582,11 @@ header h1 {
 	border: 1px solid #ccc;
 	border-top: none;
 	color: #333;
-	background-color: #F2F2F2;
+	background-color: #fff;
 }
 
 .p2p-school {
 	padding-bottom: 50px;
-}
-
-.p2p-main a:link {
-	color: #1571BD;
-	text-decoration: none;
-}
-
-.p2p-main a:visited {
-	color: #1571BD;
-}
-
-.p2p-main a:hover {
-	color: #373534;
-}
-
-.p2p-main a:active {
-	color: #1571BD;
 }
 
 #statep2p {
@@ -689,62 +604,59 @@ header h1 {
 }
 
 /*----------------------------------------------------SHARED PAGE---------------------------------------------------*/
-.shared-main {
-	height: 100%;
-	width: 70%;
-	margin-top: -350px;
-	margin-left: 400px;
+.shared-wrapper {
 	display: flex;
 	flex-direction: column;
 }
 
-.shared-info {
-	color: #F2F2F2;
-	line-height: 2;
-	height: 250px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	margin-bottom: 50px;
+.shared-toggle,
+.shared-toggle2 {
+	background-color: #105A96;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	font-size: 20px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.shared-toggle {
+	margin-bottom: 15px;
 }
 
 .shared-chart {
-	font-size: 20px;
+	font-size: 18px;
 	margin-bottom: 50px;
 }
 
 .shared-chart2 {
-	font-size: 20px;
+	font-size: 18px;
 	margin-bottom: 50px;
 }
 
 .shared-chart tr:nth-child(odd) {
-	background-color: #105A96;
-	color: #F2F2F2;
+	color: #fff;
 }
 
 .shared-chart2 tr:nth-child(odd) {
-	background-color: #105A96;
-	color: #F2F2F2;
+	color: #fff;
 }
 
 
 .shared-chart tr:nth-child(even) {
-	background-color: #FFCF06;
-	color: #333;
+	color: #fff;
 }
 
 .shared-chart2 tr:nth-child(even) {
-	background-color: #FFCF06;
-	color: #333;
+	color: #fff;
 }
 
 .shared-chart th, td {
-	padding: 15px;
+	padding: 18px;
 }
 
 .shared-chart2 th, td {
-	padding: 15px;
+	padding: 18px;
 }
 
 .shared-chart th {
@@ -771,83 +683,24 @@ header h1 {
 	display: block;
 }
 
-.shared-main a {
-	margin-bottom: 25px;
-}
-
-.shared-main a:link, a:visited {
-	background-color: #105A96;
-	color: #F2F2F2;
-	padding: 10px;
-	text-align: center;
-	font-size: 20px;
-	text-decoration: none;
-	display: inline-block;
-}
-
-.shared-main a:hover, a:active {
-	background-color: #0C4370;
-}
-
 /*----------------------------------------------------ON-CAMPUS EVENTS PAGE---------------------------------------------------*/
-.campevents-main {
-	height: 100%;
-	width: 70%;
-	margin-top: -350px;
-	margin-left: 400px;
-	color: #F2F2F2;
-}
-
-.campevents-info {
-	margin-bottom: 50px;
-}
 
 .visitscal {
 	border: none;
-	height: 500px;
+	height: 550px;
 	width: 100%;
-	
 }
-
-/* .campevents-info { */
-	/* margin-bottom: 50px; */
-/* } */
-
-/* .campevents-wrapper { */
-	/* line-height: 2; */
-/* } */
-
-/* .campevents-main a:link { */
-	/* color: #FFCF01; */
-	/* text-decoration: none; */
-/* } */
-
-/* .campevents-main a:visited { */
-	/* color: #FFCF01; */
-/* } */
-
-/* .campevents-main a:hover { */
-	/* color: #F2F2F2; */
-/* } */
-
-/* .campevents-main a:active { */
-	/* color: #FFCF01; */
-/* } */
 
 
 /*----------------------------------------------------GEN EDS PAGE---------------------------------------------------*/
-.geneds-main {
-	height: 100%;
-	width: 70%;
-	margin-top: -350px;
-	margin-left: 400px;
+.page-title5 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 60px;
+	height: 100px;
 }
 
-.geneds-info {
-	color: #F2F2F2;
-	line-height: 2;
-	margin-bottom: 50px;
-}
 
 .geneds-wrapper {
 	display: flex;
@@ -855,25 +708,18 @@ header h1 {
 	line-height: 3;
 }
 
-.geneds-main a:link {
+.geneds-wrapper a {
 	color: #FFCF01;
 	text-decoration: none;
 }
 
-.geneds-main a:visited {
-	color: #FFCF01;
+.geneds-wrapper a:hover {
+	color: #fff;
 }
 
-.geneds-main a:hover {
-	color: #F2F2F2;
-}
-
-.geneds-main a:active {
-	color: #FFCF01;
-}
 
 .gened-heading {
-	color: #F2F2F2;
+	color: #fff;
 	text-decoration: underline;
 }
 
@@ -882,26 +728,15 @@ header h1 {
 }
 
 /*----------------------------------------------------NURSING PAGE---------------------------------------------------*/
-.nursing-main {
-	height: 100%;
-	width: 70%;
-	margin-top: -350px;
-	margin-left: 400px;
-	color: #F2F2F2;	
-}
 
 .nursing-wrapper {
 	padding-bottom: 50px;
 }
 
-.nursing-info {
-	margin-bottom: 25px;
-}
-
 .nurs-row1 {
 	display: flex;
 	justify-content: space-around;
-	border: 1px solid #F2F2F2;
+	border: 1px solid #fff;
 	background-color: rgba(0,0,0,.2);
 	padding: 20px;
 	margin-bottom: 50px;
@@ -910,27 +745,19 @@ header h1 {
 .nurs-row2 {
 	display: flex;
 	justify-content: space-around;
-	border: 1px solid #F2F2F2;
+	border: 1px solid #fff;
 	background-color: rgba(0,0,0,.2);
 	line-height: 2.5;
 	padding: 20px;
 }
 
-.nursing-main a:link {
+.nursing-wrapper a {
 	color: #FFCF01;
 	text-decoration: none;
 }
 
-.nursing-main a:visited {
-	color: #FFCF01;
-}
-
-.nursing-main a:hover {
-	color: #F2F2F2;
-}
-
-.nursing-main a:active {
-	color: #FFCF01;
+.nursing-wrapper a:hover {
+	color: #fff;
 }
 
 .indent4 {
@@ -938,18 +765,6 @@ header h1 {
 }
 
 /*----------------------------------------------------TRANSFER PREP PAGE---------------------------------------------------*/
-.prep-main {
-	height: 100%;
-	width: 70%;
-	margin-top: -350px;
-	margin-left: 400px;
-	color: #F2F2F2;		
-}
-
-.prep-info {
-	margin-bottom: 50px;
-}
-
 .prep-wrapper {
 	display: flex;
 	flex-direction: column;
@@ -968,7 +783,7 @@ header h1 {
 
 .prep-collapsible {
 	background-color: #105A96;
-	color: #F2F2F2;
+	color: #fff;
 	cursor: pointer;
 	padding: 18px;
 	width: 46%;
@@ -988,28 +803,19 @@ header h1 {
 	display: none;
 	overflow: hidden;
 	background-color: rgba(0,0,0,.25);
-	color: #F2F2F2;
+	color: #fff;
 }
 
-.prep-main a:link {
+.prep-wrapper a {
 	color: #FFCF01;
 	text-decoration: none;
 }
 
-.prep-main a:visited {
-	color: #FFCF01;
+.prep-wrapper a:hover {
+	color: #fff;
 }
 
-.prep-main a:hover {
-	color: #F2F2F2;
-}
-
-.prep-main a:active {
-	color: #FFCF01;
-}
-
-
-
+/*----------------------------------------------------TRANSFER TRAINING PAGE---------------------------------------------------*/
 
 
 

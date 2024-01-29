@@ -24,61 +24,58 @@
 
 <body>
 
-
 <header>
-	<img src="../img/college-logo.png" id="college-logo">
 	<h1>Transfer Office Prep Site</h1>
+	<button class="submit">Submit Prep Info</button>
 </header>
 
-<ul class="fly-menu">
-	<li><a href="../HOME.html">Home</a></li>
-	
-	<li><a href="#">Miscellaneous Info</a>
-		<ul>
-			<li"><a href="../Miscellaneous/ENGINES.html">College Search Engines</a></li>
-			<li><a href="../Miscellaneous/SCHOLAR.html">Scholarship Finders</a></li>
-			<li><a href="../Miscellaneous/TOOLS.html">Transfer Tools</a></li>
-		</ul>
-	</li>
-	
-	<li><a href="../Online-Accel/ONLINE.html">Online or Accelerated Degrees</a></li>
-	
-	<li class="fly-active"><a href="#">Transfer Agreements</a>
-		<ul>
-			<li class="fly-active"><a href="TYPES.html">Agreements Types</a></li>
-			<li><a href="DUAL.html">Dual/Guaranteed Admission</a></li>
-			<li><a href="FACT.html">Fact Sheets</a></li>
-			<li><a href="ITE.html">Intent to Enroll Info</a></li>
-			<li><a href="P2P.html">Program-to-Program</a></li>
-			<li><a href="SHARED.html">Shared Programs</a></li>
-		</ul>
-	</li>
-	
-	<li><a href="#">Transfer Events</a>
-		<ul>
-			<li><a href="../Transfer-Events/VISITS.html">On-campus Visits</a></li>
-			<li><a href="../Transfer-Events/TIM.html">Transfer Information Month</a></li>
-		</ul>
-	</li>
-		
-	<li><a href="#">Transfer Guides</a>
-		<ul>
-			<li><a href="../Transfer-Guides/GENED.html">General Education Guides</a></li>
-			<li><a href="../Transfer-Guides/NURSING.html">Nursing</a></li>
-			<li><a href="../Transfer-Guides/PREP.html">Transfer Prep<sup>TM</sup></a></li>
-		</ul>
-	</li>
-	
-	<li><a href="#">Transfer Training</a></li>
-</ul>
+<div class="sidenav">
+	<!-- <img src="img/college-logo.png" id="college-logo"> -->
+	<a href="../HOME.html">-Home</a>
+	<h4>Miscellaneous Info</h4>
+	<a href="../Miscellaneous/ENGINES.html" class="nav-head">-College Search Engines</a>
+	<a href="../Miscellaneous/SCHOLAR.html" class="nav-head">-Scholarship Finders</a>
+	<a href="../Miscellaneous/TOOLS.html" class="nav-head">-Transfer Tools</a>
+	<a href="../Online-Accel/ONLINE.html">-Online or Accelerated Degrees</p></a>
+	<h4>Transfer Agreements</h4>
+	<a href="DUAL.html" class="nav-head"><p class="active">-Dual/Guaranteed Admission</p></a></li>
+	<a href="ITE.html" class="nav-head">-Intent to Enroll Info</a>
+	<a href="P2P.html" class="nav-head">-Program-to-Program</a>
+	<a href="SHARED.html" class="nav-head">-Shared Programs</a>
+	<h4>Transfer Events</h4>
+	<a href="../Transfer-Events/VISITS.html" class="nav-head">-On-campus Visits/Events</a>
+	<a href="../Transfer-Events/TIM.html" class="nav-head">-Transfer Information Month</a>
+	<h4>Transfer Guides</h4>
+	<a href="../Transfer-Guides/GENED.html" class="nav-head">-General Education Guides</a>
+	<a href="../Transfer-Guides/NURSING.html" class="nav-head">-Nursing</a>
+	<a href="../Transfer-Guides/PREP.html" class="nav-head">-Transfer Prep<sup>TM</sup></a>
+	<a href="../Transfer-Training/TRAINING.html">-Transfer Training</a>
+</div>
 
-<div class="dual-main">
-	<div class="dual-info">
+<div class="main">
+	<div class="page-title3">
 		<h2>Dual/Guaranteed Admission</h2>
-		<h3>Click on a category to view the list of schools.</h3> 
-		<h3>Click on the name of the school to download the agreement file.</h3>
+		<button id="dual-button"><h4>Types of transfer agreements</h4></button> 
+		<h4>Click on a category to view the list of schools.</h4> 
+		<h4>Click on the name of the school to download the agreement file.</h4>
 	</div>
-
+	
+	<div id="dual-modal" class="modal1">
+		<div class="modal1-content">
+		<span class="close1">&times;</span>
+		<p>Core-to-Core: a schools promise to accept the general education credits embedded in a specific degree from DCCC. Students earning the A.A. or A.S. degree prior to transfer qualify for the 		
+		Core-to-Core agreement. Depending on the transfer institution and intended major, students enrolled in an A.F.A. or A.A.S. degree may also qualify. Refer to the school's agreement for details on course 
+		information.
+		<br>
+		<br>
+Dual Admission/Guaranteed Admission: guaranteed admission to the partner school. Students may also be guaranteed admission to a particular major of choice as long as eligibility requirements are met. In order to be eligible to transfer under the terms of the Dual Admission agreement, students must complete an Associate in Arts, Associate in Fine Arts, Associate in Science or Associate in Applied Science to qualify. The application fee will be waived or refunded. Students transferring under the Dual Admission program may also be guaranteed scholarships. Additional benefits may be included in the agreement.
+		<br>
+		<br>
+Program-to-Program: Program-to-Program agreements are pathways, maps, or guides that indicate how the courses included in a DCCC major transfer to the partner school. These agreements provide guidance for the elective courses that students should complete prior to transfer, in order to transfer into junior year status.</p>
+		</div>	
+	</div>
+	
+	
 	<div class="dual-tab">
 		<button class="tablinks2" onclick="openCriteria(event, 'Core')">Core-to-Core</button>
 		<button class="tablinks2" onclick="openCriteria(event, 'Dual')">Dual Admission</button>
@@ -95,6 +92,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/Albright.pdf" target="_blank">Albright College</a></h3>
 					<ul>
+						<li><a href="factsheets/Albright-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Core-to-Core</li>
 						<li>Dual Admission</li>
 						<li>No Credit Limit</li>
@@ -103,6 +101,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/Arcadia.pdf" target="_blank">Arcadia University</a></h3>
 					<ul>
+						<li><a href="factsheets/Arcadia-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Core-to-Core</li>
 						<li>Dual Admission</li>
 						<li>Under 30 Credits</li>
@@ -135,6 +134,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/DelVal.pdf" target="_blank">Delaware Valley University</a></h3>
 					<ul>
+						<li><a href="factsheets/DelVal-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Core-to-Core</li>
 						<li>Dual Admission</li>
 						<li>Under 30 Credits</li>
@@ -151,6 +151,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/LaSalle.pdf" target="_blank">La Salle University</a></h3>
 					<ul>
+						<li><a href="factsheets/LaSalle-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Core-to-Core</li>
 						<li>Dual Admission</li>
 						<li>Under 45 Credits</li>
@@ -166,7 +167,8 @@
 				</div>		
 				<div class="dual-school">
 					<h3><a href="agreements/Temple.pdf" target="_blank">Temple University</a></h3>
-					<ul>
+					<ul
+						<li><a href="factsheets/Temple-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Core-to-Core</li>
 						<li>Dual Admission</li>
 						<li>Under 30 Credits</li>
@@ -175,6 +177,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/WestChester.pdf" target="_blank">West Chester University</a></h3>
 					<ul>
+						<li><a href="factsheets/WestChester-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Core-to-Core</li>
 						<li>Dual Admission</li>
 						<li>Under 30 Credits</li>
@@ -188,6 +191,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/Albright.pdf" target="_blank">Albright College</a></h3>
 					<ul>
+						<li><a href="factsheets/Albright-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Dual Admission</li>
 						<li>No Credit Limit</li>
 					</ul>
@@ -202,6 +206,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/Arcadia.pdf" target="_blank"><a href="agreements/Arcadia.pdf" target="_blank">Arcadia University</a></h3>
 					<ul>
+						<li><a href="factsheets/Arcadia-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Core-to-Core</li>
 						<li>Dual Admission</li>
 						<li>Under 30 Credits</li>
@@ -226,6 +231,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/DelVal.pdf" target="_blank">Delaware Valley University</a></h3>
 					<ul>
+						<li><a href="factsheets/DelVal-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Core-to-Core</li>
 						<li>Dual Admission</li>
 						<li>Under 30 Credits</li>
@@ -256,6 +262,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/Immaculata.pdf" target="_blank">Immaculata University</a></h3>
 					<ul>
+						<li><a href="factsheets/Immaculata-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Dual Admission</li>
 						<li>Under 30 Credits</li>
 					</ul>
@@ -263,6 +270,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/LaSalle.pdf" target="_blank">La Salle University</a></h3>
 					<ul>
+						<li><a href="factsheets/LaSalle-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Dual Admission</li>
 						<li>Under 45 Credits</li>
 					</ul>
@@ -278,6 +286,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/Neumann.pdf" target="_blank">Neumann University</a></h3>
 					<ul>
+						<li><a href="factsheets/Neumann-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Dual Admission</li>
 						<li>Under 45 Credits</li>
 					</ul>
@@ -292,15 +301,17 @@
 				<div class="dual-school">
 					<h3><a href="agreements/Rosemont.pdf" target="_blank">Rosemont University</a></h3>
 					<ul>
+						<li><a href="factsheets/Rosemont-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Dual Admission</li>
 						<li>Under 45 Credits</li>
 					</ul>
 				</div>
 				<div class="dual-school">
-					<h3>St. Joseph's University</h3>
+					<h3>St. Joe's University</h3>
 					<h4><a href="agreements/StJoes.pdf" target="_blank">Traditional Undergrad</a></h4>
 					<h4><a href="agreements/StJoesPro.pdf" target="_blank">Professional Studies</a></h4>
 					<ul>
+						<li><a href="factsheets/SJoes-Combo-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Dual Admission</li>
 						<li>Under 30 Credits</li>
 					</ul>
@@ -315,6 +326,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/Temple.pdf" target="_blank">Temple University</a></h3>
 					<ul>
+						<li><a href="factsheets/Temple-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Core-to-Core</li>
 						<li>Dual Admission</li>
 						<li>Under 30 Credits</li>
@@ -323,6 +335,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/WestChester.pdf" target="_blank">West Chester University</a></h3>
 					<ul>
+						<li><a href="factsheets/WestChester-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Core-to-Core</li>
 						<li>Dual Admission</li>
 						<li>Under 30 Credits</li>
@@ -331,6 +344,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/Widener.pdf" target="_blank">Widener University</a></h3>
 					<ul>
+						<li><a href="factsheets/Widener-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Dual Admission</li>
 						<li>Under 30 Credits</li>
 					</ul>
@@ -358,6 +372,7 @@
 					<h3><a href="agreements/Villanova.pdf" target="_blank">Villanova University</a></h3>
 					<h3>Professional Studies</h3>
 					<ul>
+						<li><a href="factsheets/Villanova-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Guaranteed Admission</li>
 						<li>Under 30 Credits</li>
 					</ul>
@@ -365,6 +380,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/WilmU.pdf" target="_blank">Wilmington University</a></h3>
 					<ul>
+						<li><a href="factsheets/WilmU-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Guaranteed Admission</li>
 						<li>Under 45 Credits</li>
 					</ul>
@@ -377,6 +393,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/Albright.pdf" target="_blank">Albright College</a></h3>
 					<ul>
+						<li><a href="factsheets/Albright-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Dual Admission</li>
 						<li>No Credit Limit</li>
 					</ul>
@@ -396,6 +413,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/Arcadia.pdf" target="_blank"><a href="agreements/Arcadia.pdf" target="_blank">Arcadia University</a></h3>
 					<ul>
+						<li><a href="factsheets/Arcadia-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Core-to-Core</li>
 						<li>Dual Admission</li>
 						<li>Under 30 Credits</li>
@@ -420,6 +438,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/DelVal.pdf" target="_blank">Delaware Valley University</a></h3>
 					<ul>
+						<li><a href="factsheets/DelVal-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Core-to-Core</li>
 						<li>Dual Admission</li>
 						<li>Under 30 Credits</li>
@@ -443,6 +462,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/Immaculata.pdf" target="_blank">Immaculata University</a></h3>
 					<ul>
+						<li><a href="factsheets/Immaculata-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Dual Admission</li>
 						<li>Under 30 Credits</li>
 					</ul>
@@ -467,6 +487,7 @@
 					<h4><a href="agreements/StJoes.pdf" target="_blank">Traditional Undergrad</a></h4>
 					<h4><a href="agreements/StJoesPro.pdf" target="_blank">Professional Studies</a></h4>
 					<ul>
+						<li><a href="factsheets/SJoes-Combo-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Dual Admission</li>
 						<li>Under 30 Credits</li>
 					</ul>
@@ -481,6 +502,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/Temple.pdf" target="_blank">Temple University</a></h3>
 					<ul>
+						<li><a href="factsheets/Temple-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Core-to-Core</li>
 						<li>Dual Admission</li>
 						<li>Under 30 Credits</li>
@@ -489,6 +511,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/Villanova.pdf" target="_blank">Villanova University</a></h3>
 					<ul>
+						<li><a href="factsheets/Villanova-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Guaranteed Admission</li>
 						<li>Under 30 Credits</li>
 					</ul>
@@ -496,6 +519,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/WestChester.pdf" target="_blank">West Chester University</a></h3>
 					<ul>
+						<li><a href="factsheets/WestChester-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Core-to-Core</li>
 						<li>Dual Admission</li>
 						<li>Under 30 Credits</li>
@@ -504,6 +528,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/Widener.pdf" target="_blank">Widener University</a></h3>
 					<ul>
+						<li><a href="factsheets/Widener-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Dual Admission</li>
 						<li>Under 30 Credits</li>
 					</ul>
@@ -530,6 +555,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/LaSalle.pdf" target="_blank">La Salle University</a></h3>
 					<ul>
+						<li><a href="factsheets/LaSalle-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Dual Admission</li>
 						<li>Under 45 Credits</li>
 					</ul>
@@ -537,6 +563,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/Neumann.pdf" target="_blank">Neumann University</a></h3>
 					<ul>
+						<li><a href="factsheets/Neumann-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Dual Admission</li>
 						<li>Under 45 Credits</li>
 					</ul>
@@ -551,6 +578,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/Rosemont.pdf" target="_blank">Rosemont University</a></h3>
 					<ul>
+						<li><a href="factsheets/Rosemont-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Dual Admission</li>
 						<li>Under 45 Credits</li>
 					</ul>
@@ -558,6 +586,7 @@
 				<div class="dual-school">
 					<h3><a href="agreements/WilmU.pdf" target="_blank">Wilmington University</a></h3>
 					<ul>
+						<li><a href="factsheets/WilmU-Fact.pdf" target="_blank">FACT SHEET</a></li>
 						<li>Guaranteed Admission</li>
 						<li>Under 45 Credits</li>
 					</ul>

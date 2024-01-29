@@ -26,59 +26,40 @@
 
 
 <header>
-	<img src="../img/college-logo.png" id="college-logo">
 	<h1>Transfer Office Prep Site</h1>
+	<button class="submit">Submit Prep Info</button>
 </header>
 
-<ul class="fly-menu">
-	<li><a href="../HOME.html">Home</a></li>
-	
-	<li><a href="#">Miscellaneous Info</a>
-		<ul>
-			<li"><a href="../Miscellaneous/ENGINES.html">College Search Engines</a></li>
-			<li><a href="../Miscellaneous/SCHOLAR.html">Scholarship Finders</a></li>
-			<li><a href="../Miscellaneous/TOOLS.html">Transfer Tools</a></li>
-		</ul>
-	</li>
-	
-	<li class="fly-active"><a href="ONLINE.html">Online or Accelerated Degrees</a></li>
-	
-	<li><a href="#">Transfer Agreements</a>
-		<ul>
-			<li><a href="../Transfer-Agreements/TYPES.html">Agreements Types</a></li>
-			<li><a href="../Transfer-Agreements/DUAL.html">Dual/Guaranteed Admission</a></li>
-			<li><a href="../Transfer-Agreements/FACT.html">Fact Sheets</a></li>
-			<li><a href="../Transfer-Agreements/ITE.html">Intent to Enroll Info</a></li>
-			<li><a href="../Transfer-Agreements/P2P.html">Program-to-Program</a></li>
-			<li><a href="../Transfer-Agreements/SHARED.html">Shared Programs</a></li>
-		</ul>
-	</li>
-	
-	<li><a href="#">Transfer Events</a>
-		<ul>
-			<li><a href="../Transfer-Events/VISITS.html">On-campus Visits</a></li>
-			<li><a href="../Transfer-Events/TIM.html">Transfer Information Month</a></li>
-		</ul>
-	</li>
-		
-	<li><a href="#">Transfer Guides</a>
-		<ul>
-			<li><a href="../Transfer-Guides/GENED.html">General Education Guides</a></li>
-			<li><a href="../Transfer-Guides/NURSING.html">Nursing</a></li>
-			<li><a href="../Transfer-Guides/PREP.html">Transfer Prep<sup>TM</sup></a></li>
-		</ul>
-	</li>
-	
-	<li><a href="#">Transfer Training</a></li>
-</ul>
+<div class="sidenav">
+	<!-- <img src="img/college-logo.png" id="college-logo"> -->
+	<a href="../HOME.html">-Home</a>
+	<h4>Miscellaneous Info</h4>
+	<a href="../Miscellaneous/ENGINES.html" class="nav-head">-College Search Engines</a>
+	<a href="../Miscellaneous/SCHOLAR.html" class="nav-head">-Scholarship Finders</a>
+	<a href="../Miscellaneous/TOOLS.html" class="nav-head">-Transfer Tools</a>
+	<a href="ONLINE.html"><p class="active">-Online or Accelerated Degrees</p></a>
+	<h4>Transfer Agreements</h4>
+	<a href="../Transfer-Agreements/DUAL.html" class="nav-head">-Dual/Guaranteed Admission</a></li>
+	<a href="../Transfer-Agreements/ITE.html" class="nav-head">-Intent to Enroll Info</a>
+	<a href="../Transfer-Agreements/P2P.html" class="nav-head">-Program-to-Program</a>
+	<a href="../Transfer-Agreements/SHARED.html" class="nav-head">-Shared Programs</a>
+	<h4>Transfer Events</h4>
+	<a href="../Transfer-Events/VISITS.html" class="nav-head">-On-campus Visits/Events</a>
+	<a href="../Transfer-Events/TIM.html" class="nav-head">-Transfer Information Month</a>
+	<h4>Transfer Guides</h4>
+	<a href="../Transfer-Guides/GENED.html" class="nav-head">-General Education Guides</a>
+	<a href="../Transfer-Guides/NURSING.html" class="nav-head">-Nursing</a>
+	<a href="../Transfer-Guides/PREP.html" class="nav-head">-Transfer Prep<sup>TM</sup></a>
+	<a href="../Transfer-Training/TRAINING.html">-Transfer Training</a>
+</div>
 
-<div class="online-main">
+<div class="main">
 
-	<div class="online-info">
+	<div class="page-title2">
 		<h2>Online/Accelerated Degrees</h2>
-		<h3 id="online-heading">Most programs listed below will be found in a Professional/Liberal Studies, or Adult-Education division, unless the school is designed for online and/or non-traditional students (i.e., Wilmington 
-		University).</h3>
-		<h3>Click on a category to view the list of schools.</h3>
+		<h3 id="online-heading">Most programs listed below will be found in a Professional/Liberal Studies, or Adult-Education division, unless the school is designed for online and/or non-traditional students (i.e., Wilmington University).</h3>
+		<h4>Click on a category to view the list of schools.</h4>
+		
 	</div>
 
 	<div class="online-tab">
@@ -98,6 +79,8 @@
 
 	<div class="online-wrapper">
 		<div id="Business" class="tabcontent1">
+		<button onClick="printdiv('printable_div_id_Bus');" class="print">PRINT</button>
+		<div id="printable_div_id_Bus">
 			<div class="online-school">
 				<h3>Albright College (fully asynchronous online or hybrid face-to-face and online instruction)</h3><br>
 				<p>Accounting</p><br>
@@ -197,30 +180,30 @@
 			<div class="online-school">
 				<h3>Southern New Hampshire University (100% online)</h3><br>
 				<p>Accounting</p><br>
-				<p class="indent">Forensic Accounting & Fraud Examination</p><br>
+				<p class="online-indent">Forensic Accounting & Fraud Examination</p><br>
 				<p>Business Administration</p><br>
-				<p class="indent">Accounting</p><br>
-				<p class="indent">Entrepreneurship</p><br>
-				<p class="indent">Finance</p><br>
-				<p class="indent">Entrepreneurship</p><br>
-				<p class="indent">Human Resource Management</p><br>
-				<p class="indent">Industrial Organizational Psychology</p><br>
-				<p class="indent">International Business</p><br>
-				<p class="indent">Management Information Systems</p><br>
-				<p class="indent">Marketing</p><br>
-				<p class="indent">Nonprofit Management</p><br>
-				<p class="indent">Organizational Leadership</p><br>
-				<p class="indent">Project Management</p><br>
-				<p class="indent">Public Administration</p><br>
-				<p class="indent">Sport Management</p><br>
+				<p class="online-indent">Accounting</p><br>
+				<p class="online-indent">Entrepreneurship</p><br>
+				<p class="online-indent">Finance</p><br>
+				<p class="online-indent">Entrepreneurship</p><br>
+				<p class="online-indent">Human Resource Management</p><br>
+				<p class="online-indent">Industrial Organizational Psychology</p><br>
+				<p class="online-indent">International Business</p><br>
+				<p class="online-indent">Management Information Systems</p><br>
+				<p class="online-indent">Marketing</p><br>
+				<p class="online-indent">Nonprofit Management</p><br>
+				<p class="online-indent">Organizational Leadership</p><br>
+				<p class="online-indent">Project Management</p><br>
+				<p class="online-indent">Public Administration</p><br>
+				<p class="online-indent">Sport Management</p><br>
 				<p>Finance</p><br>
-				<p class="indent">Financial Planning</p><br>
+				<p class="online-indent">Financial Planning</p><br>
 				<p>Marketing</p><br>
-				<p class="indent">Digital Marketing</p><br>
-				<p class="indent">Social Media Marketing</p><br>
+				<p class="online-indent">Digital Marketing</p><br>
+				<p class="online-indent">Social Media Marketing</p><br>
 				<p>Operations Management</p><br>
-				<p class="indent">Logistics & Transportation</p><br>
-				<p class="indent">Project Management</p><br>
+				<p class="online-indent">Logistics & Transportation</p><br>
+				<p class="online-indent">Project Management</p><br>
 				<p>Sport Management</p><br>
 				<p>Technical Management II</p><br>
 			</div>	
@@ -272,9 +255,12 @@
 				<p>Organizational Leadership</p><br>
 				<p>Sports Management</p><br>
 			</div>
+			</div>
 		</div>
 			
 		<div id="Communications" class="tabcontent1">
+		<button onClick="printdiv('printable_div_id_Comm');" class="print">PRINT</button>
+		<div id="printable_div_id_Comm">
 			<div class="online-school">
 				<h3>Alvernia University</h3><br>
 				<p>Communication (Main Campus, Online)</p><br>
@@ -293,16 +279,16 @@
 			<div class="online-school">
 				<h3>Southern New Hampshire University (100% online)</h3><br>
 				<p>Communication</p><br>
-				<p class="indent">Business Communication</p><br>
-				<p class="indent">New Media</p><br>
-				<p class="indent">Professional Writing</p><br>
-				<p class="indent">Public Relations</p><br>
+				<p class="online-indent">Business Communication</p><br>
+				<p class="online-indent">New Media</p><br>
+				<p class="online-indent">Professional Writing</p><br>
+				<p class="online-indent">Public Relations</p><br>
 				<p>Digital Photography</p><br>
 				<p>Game Art & Development</p><br>
 				<p>Game Programming & Development</p><br>
 				<p>Graphic Design & Media Arts</p><br>
-				<p class="indent">User Experience (UX)</p><br>
-				<p class="indent">Web Design</p><br>
+				<p class="online-indent">User Experience (UX)</p><br>
+				<p class="online-indent">Web Design</p><br>
 			</div>	
 			<div class="online-school">
 				<h3>Wilmington University (100% online)</h3><br>
@@ -317,10 +303,12 @@
 				<p>Visual Communication</p><br>
 				<p>Web Design</p><br>
 			</div>
+			</div>
 		</div>
 
-
 		<div id="Computers" class="tabcontent1">
+		<button onClick="printdiv('printable_div_id_CS');" class="print">PRINT</button>
+		<div id="printable_div_id_CS">
 			<div class="online-school">
 				<h3>DeSales University (fully online or Evening/In-Class)</h3><br>
 				<p>Management of Information Technology</p><br>
@@ -352,14 +340,14 @@
 				<h3>Southern New Hampshire University (100% online)</h3><br>
 				<p>Computer Information Systems</p><br>
 				<p>Computer Science</p><br>
-				<p class="indent">Project Management</p><br> 
+				<p class="online-indent">Project Management</p><br> 
 				<p>Data Analytics</p><br> 
-				<p class="indent">Project Management</p><br> 
+				<p class="online-indent">Project Management</p><br> 
 				<p>Game Programming & Development</p><br> 
 				<p>Information Technologies</p><br> 
-				<p class="indent">Business Management</p><br> 
-				<p class="indent">Data Analytics</p><br> 
-				<p class="indent">Project Management for IT</p><br> 
+				<p class="online-indent">Business Management</p><br> 
+				<p class="online-indent">Data Analytics</p><br> 
+				<p class="online-indent">Project Management for IT</p><br> 
 			</div>		
 			<div class="online-school">
 				<h3>Villanova University(On-campus or Hybrid)</h3><br>
@@ -373,9 +361,12 @@
 				<p>Information Systems Management</p><br> 
 				<p>Web Design</p><br> 
 			</div>
+			</div>
 		</div>
 		
-		<div id="Criminal" class="tabcontent1">
+		<div id="Criminal" class="tabcontent1">		
+		<button onClick="printdiv('printable_div_id_CJ');" class="print">PRINT</button>
+		<div id="printable_div_id_CJ">
 			<div class="online-school">
 				<h3>Alvernia University</h3><br>  
 				<p>Criminal Justice Administration (Main Campus, Philadelphia Center, Schuylkill Center, Online)</p><br> 
@@ -430,14 +421,14 @@
 			<div class="online-school">
 				<h3>Southern New Hampshire University (100% online)</h3><br>
 				<p>Criminal Justice</p><br> 
-				<p class="indent">Corrections</p><br> 
-				<p class="indent">Criminology & Crime Analysis</p><br> 
-				<p class="indent">Cybercrime</p><br> 
-				<p class="indent">Homeland Security & Counterterrorism</p><br> 
-				<p class="indent">Human Services & Advocacy</p><br> 
-				<p class="indent">Police Administration & Operations</p><br> 
-				<p class="indent">Security Management</p><br> 
-				<p class="indent">Substance Abuse</p><br> 
+				<p class="online-indent">Corrections</p><br> 
+				<p class="online-indent">Criminology & Crime Analysis</p><br> 
+				<p class="online-indent">Cybercrime</p><br> 
+				<p class="online-indent">Homeland Security & Counterterrorism</p><br> 
+				<p class="online-indent">Human Services & Advocacy</p><br> 
+				<p class="online-indent">Police Administration & Operations</p><br> 
+				<p class="online-indent">Security Management</p><br> 
+				<p class="online-indent">Substance Abuse</p><br> 
 			</div>
 			<div class="online-school">
 				<h3>St. Joseph's University (on-campus)</h3><br> 
@@ -452,10 +443,13 @@
 				<p>Criminal Justice</p><br>  
 				<p>Law, Policy, and Political Science</p><br>  
 				<p>Political Science</p><br>
-			</div>		
+			</div>
+		</div>			
 		</div>
 		
 		<div id="Education" class="tabcontent1">
+		<button onClick="printdiv('printable_div_id_Edu');" class="print">PRINT</button>
+		<div id="printable_div_id_Edu">
 			<div class="online-school">
 				<h3>Alvernia University</h3><br>
 				<p>Early Childhood Education-Grades Pre K-4 (Schuylkill Center)</p><br> 
@@ -491,10 +485,13 @@
 				<p>Early Childhood Education</p><br> 
 				<p>Elementary Education (K-6)</p><br> 
 				<p>Middle Level Education (Grades 6-8)</p><br> 
-			</div>		
+			</div>	
+		</div>			
 		</div>
 		
 		<div id="Engineering" class="tabcontent1">
+		<button onClick="printdiv('printable_div_id_EGR');" class="print">PRINT</button>
+		<div id="printable_div_id_EGR">
 			<div class="online-school">
 				<h3>Penn State World (fully online)</h3><br>
 				<p>Software Engineering</p><br>
@@ -502,11 +499,14 @@
 			<div class="online-school">
 				<h3>Southern New Hampshire University (100% online)</h3><br>
 				<p>Mathematics</p><br>
-				<p class="indent">Applied Mathematics</p><br>
+				<p class="online-indent">Applied Mathematics</p><br>
 			</div>
+		</div>
 		</div>
 		
 		<div id="General" class="tabcontent1">
+		<button onClick="printdiv('printable_div_id_Gen');" class="print">PRINT</button>
+		<div id="printable_div_id_Gen">
 			<div class="online-school">
 				<h3>Alvernia University</h3><br>  
 				<p>Liberal Studies (Main Campus, Schuylkill Center, Online)</p><br> 
@@ -541,8 +541,8 @@
 			<div class="online-school">
 				<h3>St. Joseph's University</h3><br>
 				<p>General Studies</p><br>
-				<p class="indent">General Concentration (on-campus)</p><br>  
-				<p class="indent">Professional Studies Concentration (100% online)</p><br> 
+				<p class="online-indent">General Concentration (on-campus)</p><br>  
+				<p class="online-indent">Professional Studies Concentration (100% online)</p><br> 
 			</div>		
 			<div class="online-school">
 				<h3>Temple University (fully online)</h3><br>  
@@ -557,8 +557,11 @@
 				<p>Liberal Studies</p><br>
 			</div>
 		</div>
+		</div>
 		
 		<div id="Health" class="tabcontent1">
+		<button onClick="printdiv('printable_div_id_Heal');" class="print">PRINT</button>
+		<div id="printable_div_id_Heal">
 			<div class="online-school">
 				<h3>Alvernia University</h3><br>
 				<p>Healthcare Administration (Main Campus, Philadelphia Center, Schuylkill Center, Online)</p><br> 
@@ -621,12 +624,12 @@
 				<h3>Southern New Hampshire University (100% online)</h3><br> 
 				<p>Community Health Education</p><br>			
 				<p>Healthcare Administration</p><br> 
-				<p class="indent">Health Information Management</p><br>
-				<p class="indent">Patient Safety and Quality</p><br>
+				<p class="online-indent">Health Information Management</p><br>
+				<p class="online-indent">Patient Safety and Quality</p><br>
 				<p>Health Information Management</p><br> 
 				<p>Health Sciences</p><br> 
 				<p>Nursing (BSN)</p><br> 
-				<p class="indent">Accelerated RN to MSN</p><br> 
+				<p class="online-indent">Accelerated RN to MSN</p><br> 
 				<p>Public Health</p><br> 
 			</div>		
 			<div class="online-school">
@@ -642,9 +645,12 @@
 				<p>Health Sciences</p><br> 
 				<p>RN to BSN</p><br>
 			</div>
+			</div>
 		</div>
 		
 		<div id="Miscellaneous" class="tabcontent1">
+		<button onClick="printdiv('printable_div_id_Misc');" class="print">PRINT</button>
+		<div id="printable_div_id_Misc">
 			<div class="online-school">
 				<h3>DeSales University (Evening/In-Class)</h3><br>  
 				<p>Theology</p><br>
@@ -676,29 +682,32 @@
 			<div class="online-school">
 				<h3>Southern New Hampshire University</h3><br>  
 				<p>Anthropology</p><br> 
-				<p class="indent">Environmental Sustainability</p><br>
+				<p class="online-indent">Environmental Sustainability</p><br>
 				<p>Creative Writing & English</p><br> 
-				<p class="indent">Fiction Writing</p><br> 
-				<p class="indent">Non-Fiction Writing</p><br> 
-				<p class="indent">Poetry</p><br> 
-				<p class="indent">Screenwriting</p><br> 
+				<p class="online-indent">Fiction Writing</p><br> 
+				<p class="online-indent">Non-Fiction Writing</p><br> 
+				<p class="online-indent">Poetry</p><br> 
+				<p class="online-indent">Screenwriting</p><br> 
 				<p>English</p><br>
 				<p>History</p><br> 
-				<p class="indent">American History</p><br> 
-				<p class="indent">European History</p><br>
-				<p class="indent">Middle Eastern Studies</p><br> 
-				<p class="indent">Military History</p><br> 
+				<p class="online-indent">American History</p><br> 
+				<p class="online-indent">European History</p><br>
+				<p class="online-indent">Middle Eastern Studies</p><br> 
+				<p class="online-indent">Military History</p><br> 
 				<p>Political Science</p><br> 
 				<p>Sociology</p><br>
-				<p class="indent">Community Health</p><br> 
+				<p class="online-indent">Community Health</p><br> 
 			</div>		
 			<div class="online-school">
 				<h3>St. Joseph's University (on-campus)</h3><br>
 				<p>English & Professional Writing</p><br> 
 			</div>
+			</div>
 		</div>
 		
 		<div id="Science" class="tabcontent1">
+		<button onClick="printdiv('printable_div_id_Sci');" class="print">PRINT</button>
+		<div id="printable_div_id_Sci">
 			<div class="online-school">
 				<h3>Penn State World (fully online)</h3><br> 
 				<p>Energy and Sustainability Policy</p><br> 
@@ -707,16 +716,19 @@
 				<h3>Southern New Hampshire University (100% online)</h3><br>
 				<p>Environmental Science</p><br>  
 				<p>Geosciences</p><br> 
-				<p class="indent">Data Analytics in Science</p><br> 
-				<p class="indent">Natural Resources & Conservation</p><br> 
+				<p class="online-indent">Data Analytics in Science</p><br> 
+				<p class="online-indent">Natural Resources & Conservation</p><br> 
 			</div>		
 			<div class="online-school">
 				<h3>Wilmington University (100% online)</h3><br>  
 				<p>Environmental Science and Policy</p><br>
-			</div>		
+			</div>
+		</div>			
 		</div>
 		
 		<div id="Psych" class="tabcontent1">
+		<button onClick="printdiv('printable_div_id_Psy');" class="print">PRINT</button>
+		<div id="printable_div_id_Psy">
 			<div class="online-school">
 				<h3>Albright College (fully asynchronous online or hybrid face to face and online instruction)</h3><br>  
 				<p>Applied Psychology</p><br>  
@@ -760,17 +772,17 @@
 			<div class="online-school">
 				<h3>Southern New Hampshire University (100% online)</h3><br>
 				<p>Psychology</p><br> 
-				<p class="indent">Addictions</p><br> 
-				<p class="indent">Applied Psychology</p><br> 
-				<p class="indent">Child & Adolescent Development</p><br> 
-				<p class="indent">Forensic Psychology</p><br> 
-				<p class="indent">Mental Health</p><br> 
-				<p class="indent">Social Psychology</p><br> 
+				<p class="online-indent">Addictions</p><br> 
+				<p class="online-indent">Applied Psychology</p><br> 
+				<p class="online-indent">Child & Adolescent Development</p><br> 
+				<p class="online-indent">Forensic Psychology</p><br> 
+				<p class="online-indent">Mental Health</p><br> 
+				<p class="online-indent">Social Psychology</p><br> 
 			</div>		
 			<div class="online-school">
 				<h3>St. Joseph's University (100% online)</h3><br>
 				<p>General Studies</p><br>
-				<p class="indent">Autism Concentration-General Studies (100% online)</p><br>  
+				<p class="online-indent">Autism Concentration-General Studies (100% online)</p><br>  
 				<p>Psychological Studies (on-campus or 100% online)</p><br> 
 			</div>		
 			<div class="online-school">
@@ -779,8 +791,12 @@
 				<p>Psychology</p><br>
 				<p>Children and Families</p><br>
 			</div>
+			</div>
 		</div>
+		
 		<div id="Social" class="tabcontent1">
+		<button onClick="printdiv('printable_div_id_SW');" class="print">PRINT</button>
+		<div id="printable_div_id_SW">
 			<div class="online-school">
 				<h3>Alvernia University</h3><br> 
 				<p>Social Work (Main Campus, Philadelphia Center)</p><br> 
@@ -797,9 +813,9 @@
 			<div class="online-school">
 				<h3>Southern New Hampshire University (100% online)</h3><br> 
 				<p>Human Services</p><br> 
-				<p class="indent">Child & Family Services</p><br> 
-				<p class="indent">Gerontology</p><br> 
-				<p class="indent">Substance Abuse</p><br> 
+				<p class="online-indent">Child & Family Services</p><br> 
+				<p class="online-indent">Gerontology</p><br> 
+				<p class="online-indent">Substance Abuse</p><br> 
 			</div>			
 			<div class="online-school">
 				<h3>Temple University (in-person or fully online)</h3><br> 
@@ -810,7 +826,9 @@
 				<p>Social Work</p><br>
 			</div>
 		</div>
+		</div>
 	</div>
+
 </div>
 
 

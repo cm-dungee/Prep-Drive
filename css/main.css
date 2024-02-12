@@ -193,7 +193,7 @@ header h1 {
 }
 
 .nav-head {
-	text-indent: 25px;
+	text-indent: 20px;
 }
 
 .active {
@@ -268,15 +268,23 @@ header h1 {
 	color: #FFCF06;
 }
 
-/*----------------------------------------------------TRANSFER TOOLS PAGE---------------------------------------------------*/
+/*----------------------------------------------------TRANSFER RESOURCES PAGE---------------------------------------------------*/
 .tools-wrapper a {
-	color: #FFF;
+	color: #FFCF06;
 	text-decoration: none;
 	font-weight: bold;
 }
 
 .tools-wrapper a:hover {
-	color: #FFCF06;
+	color: #FFF;
+}
+
+.tools-wrapper h4 {
+	text-decoration: underline;
+}
+
+.indent {
+	text-indent: 25px;
 }
 
 
@@ -316,7 +324,7 @@ header h1 {
 	color: #333;
 }
 
-.online-tab button.active {
+.online-tab button.active1 {
 	background-color: #FFCF06;
 	color: #333;
 }
@@ -344,7 +352,7 @@ header h1 {
 	padding-bottom: 50px;
 }
 
-.online-indent {
+.indent1 {
 	text-indent: 30px;
 	font-style: italic;
 }
@@ -445,7 +453,7 @@ header h1 {
 	color: #333;
 }
 
-.dual-tab button.active {
+.dual-tab button.active2 {
 	background-color: #FFCF06;
 	color: #333;
 }
@@ -546,7 +554,7 @@ header h1 {
 	color: #333;
 }
 
-.p2p-tab button.active {
+.p2p-tab button.active3 {
 	background-color: #FFCF06;
 	color: #333;
 }

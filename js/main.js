@@ -85,7 +85,7 @@ function openCriteria(evt, collegeName) {
   evt.currentTarget.className += " active2";
 }
 
-// PROGRAM-TO-PROGARM PAGE TABS --------------------------------------------------------------------------------------------------------------------------------------
+// PROGRAM-TO-PROGRAM PAGE TABS --------------------------------------------------------------------------------------------------------------------------------------
 
 function openSubject(evt, collegeName) {
   // Declare all variables
@@ -109,87 +109,3 @@ function openSubject(evt, collegeName) {
 }
 
 
-// HIDE/SHOW SHARED PROGRAMS --------------------------------------------------------------------------------------------------------------------------------------
-
-// Show an element
-var show = function (elem) {
-	elem.classList.add('is-visible');
-};
-
-// Hide an element
-var hide = function (elem) {
-	elem.classList.remove('is-visible');
-};
-
-// Toggle element visibility
-var toggle = function (elem) {
-	elem.classList.toggle('is-visible');
-};
-
-// Listen for click events
-document.addEventListener('click', function (event) {
-
-	// Make sure clicked element is our toggle
-	if (!event.target.classList.contains('shared-toggle')) return;
-
-	// Prevent default link behavior
-	event.preventDefault();
-
-	// Get the content
-	var content = document.querySelector(event.target.hash);
-	if (!content) return;
-
-	// Toggle the content
-	toggle(content);
-
-}, false);
-
-// Show an element
-var show = function (elem) {
-	elem.classList.add('is-visible');
-};
-
-// Hide an element
-var hide = function (elem) {
-	elem.classList.remove('is-visible');
-};
-
-// Toggle element visibility
-var toggle = function (elem) {
-	elem.classList.toggle('is-visible');
-};
-
-// Listen for click events
-document.addEventListener('click', function (event) {
-
-	// Make sure clicked element is our toggle
-	if (!event.target.classList.contains('shared-toggle2')) return;
-
-	// Prevent default link behavior
-	event.preventDefault();
-
-	// Get the content
-	var content = document.querySelector(event.target.hash);
-	if (!content) return;
-
-	// Toggle the content
-	toggle(content);
-
-}, false);
-
-// HIDE/SHOW TRANSFER PREP LISTS --------------------------------------------------------------------------------------------------------------------------------------
-
-var coll = document.getElementsByClassName("prep-collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("prep-active1");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}

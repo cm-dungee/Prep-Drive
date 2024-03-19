@@ -477,9 +477,7 @@ header h1 {
 .tab-wrapper {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-between;
 	align-items: center;
-	align-content: space-between;
 	height: auto;
 	padding-bottom: 50px;
 }
@@ -490,10 +488,11 @@ header h1 {
 	justify-content: center;
 	background-color: #105A96;
 	width: 250px;
-	height: 150px;
+	height: 175px;
 	margin-top: 20px;
 	margin-bottom: 5px;
-	padding-left: 10px;
+	margin-right: 5px;
+	padding-left: 8px;
 }
 
 .dual-school ul {
@@ -614,44 +613,36 @@ header h1 {
 /*----------------------------------------------------SHARED PAGE---------------------------------------------------*/
 .shared-wrapper {
 	display: flex;
-	flex-direction: column;
 }
 
-.shared-toggle,
-.shared-toggle2 {
-	background-color: #105A96;
-	color: #fff;
-	padding: 10px;
-	text-align: center;
-	font-size: 20px;
-	text-decoration: none;
-	display: inline-block;
+.shared-content1,.shared-content2 {
+	flex-basis: 50%;
 }
 
-.shared-toggle {
-	margin-bottom: 15px;
+.shared-content1 {
+	border-right: 5px solid #fff;
+	padding-right: 3px;
 }
 
-.shared-chart {
-	font-size: 18px;
-	margin-bottom: 50px;
+.shared-content2 {
+	padding-left: 3px;
 }
 
-.shared-chart2 {
-	font-size: 18px;
-	margin-bottom: 50px;
+.shared-chart1, .shared-chart2 {
+	font-size: 14px;
 }
 
-.shared-chart tr:nth-child(odd) {
-	color: #fff;
+.shared-chart1 tr:nth-child(odd) {
+	color: #000;
+	background-color: gray;
 }
 
 .shared-chart2 tr:nth-child(odd) {
-	color: #fff;
+	color: #000;
+	background-color: gray;
 }
 
-
-.shared-chart tr:nth-child(even) {
+.shared-chart1 tr:nth-child(even) {
 	color: #fff;
 }
 
@@ -659,36 +650,20 @@ header h1 {
 	color: #fff;
 }
 
-.shared-chart th, td {
-	padding: 18px;
+.shared-chart1 th, td {
+	padding: 9px;
 }
 
 .shared-chart2 th, td {
-	padding: 18px;
+	padding: 9px;
 }
 
-.shared-chart th {
+.shared-chart1 th {
 	text-transform: uppercase;
 }
 
 .shared-chart2 th {
 	text-transform: uppercase;
-}
-
-.shared-content {
-	display: none;
-}
-
-.shared-content2 {
-	display: none;
-}
-
-.shared-content.is-visible {
-	display: block;
-}
-
-.shared-content2.is-visible {
-	display: block;
 }
 
 /*----------------------------------------------------ON-CAMPUS EVENTS PAGE---------------------------------------------------*/

@@ -100,13 +100,12 @@ html {
 body {
 	font-family: Arial;
 	color: #2B2B2B;
-	letter-spacing: 2px;
-	background: url('../img/STEM.png') no-repeat;
-	background-size: cover;
-	background-color: #333;
+	letter-spacing: 3px;
+	background-color: #FFF;
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	height: 100%;
 }
 
 
@@ -114,113 +113,16 @@ body {
 
 /*----------------------------------------------------UNIVERSAL---------------------------------------------------*/
 /*==FONT==*/
-h1, h2 {
-	text-shadow: 2px 2px 2px #000;
+h1 {
+	text-shadow: 1px 1px #FFCF02;
+}
+
+h2 {
+	text-transform: uppercase;
 }
 
 sup {
 	font-size: xx-small;
-}
-
-/*==HEADER==*/
-header {
-	top: 0;
-	margin-left: 325px;
-	/* padding: 10px 16px; */
-	background-color: rgba(16,90,150,0.4);
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-}
-
-header h1 {
-	color: #F2F2F2;
-	font-size: 35px;
-}
-
-.submit {
-	padding: 10px;
-	background-color: #FFCF06;
-	color: #105A96;
-	font-weight: bold;
-	border-radius: 20px;
-	border: none;
-	outline: none;
-	box-shadow: 0 9px #3A3A3A;
-	cursor: pointer;
-}
-
-.submit:hover {background-color: #B89404}
-
-.submit:active {
-  background-color: #B89404;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-/*==NAVIGATION MENU==*/
-.sidenav {
-	height: 100%;
-	width: 325px;
-	position: fixed;
-	/* z-index: 1; */
-	top: 0; 
-	overflow-x: hidden;
-	background-color: rgba(16,90,150,0.4);
-	line-height: 1.8;
-	padding-top: 15px;
-}
-
-.sidenav a {
-	padding: 5px 8px;
-	text-decoration: none;
-	font-size: 16px;
-	color: #FFF;
-	display: block;
-}
-
-.sidenav a:hover {
-	color: #FFCF06;
-}
-
-.sidenav h4 {
-	padding: 5px 8px;
-	color: #FFF;
-	/* font-style: italic; */
-	/* text-decoration: underline; */
-	text-transform: uppercase;
-	font-weight: normal;
-}
-
-.nav-head {
-	text-indent: 20px;
-}
-
-.active {
-	color: #FFCF06;
-	font-weight: bold;
-}
-
-#college-logo {
-	height: 80px;
-	width: 175px;
-	margin-bottom: 40px;
-	margin-right: 10px;
-	margin-left: 10px;
-}
-
-/*==CONTENT WINDOW==*/
-.main {
-	margin-left: 325px;
-	padding: 30px;
-	height: 100%;
-	width: auto;
-	color: #FFF;
-}
-
-.page-title {
-	text-align: center;
-	margin-bottom: 50px;
 }
 
 /*==PRINT BUTTON==*/
@@ -238,55 +140,670 @@ header h1 {
 	margin-bottom: 25px;
 }
 
-/*----------------------------------------------------HOME PAGE---------------------------------------------------*/
-.home-content {
+.page-title {
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+.page-title2 {
+	margin-bottom: 50px;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	align-items: center;
 }
 
-/*----------------------------------------------------SEARCH ENGINES PAGE---------------------------------------------------*/
-.engines-wrapper a {
+.page-title3 {
+	margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 300px;
+}
+
+.page-title4 {
+	margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+}
+
+.main {
+	padding: 30px;
+}
+
+/*----------------------------------------------------HOME PAGE---------------------------------------------------*/
+.home-wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+header {
+	flex-basis: 15%;
+	background-color: #01529B;
 	color: #FFF;
-	text-decoration: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+	letter-spacing: 4px;
+}
+
+.prep-button {
+	height: 50px;
+	width: 170px;
+	font-size: 18px;
 	font-weight: bold;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #01529B;
+	background-color: #FFCF02;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+}
+
+.prep-button:hover {
+	background-color: #FFF;
+}
+
+.prep-button:active {
+  background-color: #FFB800;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.home-content {
+	flex-basis: 85%;
+	display: flex;
+	height: 100%;
+}
+
+.sidenav {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 100%;
+	padding: 10px;
+	flex-basis: 25%;
+	background-color: #FFCF06;
+}
+
+.sidenav p {
+	color: #FFF;
+	font-size: 19px;
+	font-weight: bold;
+	text-shadow: 1px 1px 10px #40403E;
+	text-transform: uppercase;
+}
+
+.sidenav a:link {
+	text-decoration: none;
+	color: #01529B;
+	font-size: 17px;
+	text-indent: 15px;
+	font-weight: bold;
+}
+
+.sidenav a:visited {
+	color: #01529B;
+}
+
+.sidenav a:hover {
+	color: #FFF;
+}
+
+.window {
+	flex-basis: 75%;
+	height: 100%;
+	width: 100%;
+	padding: 5px;
+}
+
+iframe {
+	height: 100%;
+	width: 100%;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+/*----------------------------------------------------UPDATES PAGE---------------------------------------------------*/
+
+.updates-wrapper {
+	height: 100%;
+	padding: 20px;
+	background-image: url('../img/STEM.jpg');
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.updates-info {
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 20px;
+	color: #FFF;
+	padding: 50px;
+}
+
+.version {
+	text-align: right;
+	margin-bottom: 50px;
+}
+
+/*----------------------------------------------------SEARCH ENGINES PAGE---------------------------------------------------*/
+.engines-wrapper {
+	background-color: #01529B;
+	padding: 50px;
+}
+
+.engines-wrapper a:link {
+	text-decoration: none;
+	color: #FFCF06;
+	font-size: 17px;
+	text-indent: 15px;
+	font-weight: bold;
+}
+
+.engines-wrapper a:visited {
+	color: #FFCF06;
 }
 
 .engines-wrapper a:hover {
-	color: #FFCF06;
-	text-decoration: none;
+	color: gray;
 }
 
 /*----------------------------------------------------SCHOLARSHIP FINDERS PAGE---------------------------------------------------*/
-.scholar-wrapper a {
-	color: #FFF;
+.scholar-wrapper {
+	background-color: #01529B;
+	padding: 50px;
+}
+
+.scholar-wrapper a:link {
 	text-decoration: none;
+	color: #FFCF06;
+	font-size: 17px;
+	text-indent: 15px;
 	font-weight: bold;
+}
+
+.scholar-wrapper a:visited {
+	color: #FFCF06;
 }
 
 .scholar-wrapper a:hover {
-	color: #FFCF06;
+	color: gray;
+}
+
+.scholar-wrapper p {
+	color: #FFF;
 }
 
 /*----------------------------------------------------TRANSFER RESOURCES PAGE---------------------------------------------------*/
-.tools-wrapper a {
-	color: #FFCF06;
+.tools-wrapper {
+	background-color: #01529B;
+	padding: 50px;
+}
+
+.tools-wrapper a:link {
 	text-decoration: none;
+	color: #FFCF06;
+	font-size: 17px;
+	text-indent: 15px;
 	font-weight: bold;
 }
 
+.tools-wrapper a:visited {
+	color: #FFCF06;
+}
+
 .tools-wrapper a:hover {
-	color: #FFF;
+	color: gray;
 }
 
 .tools-wrapper h4 {
 	text-decoration: underline;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #FFF;
+}
+
+.tools-wrapper p {
+	color: #FFF;
 }
 
 .indent {
 	text-indent: 25px;
 }
 
+
+/*----------------------------------------------------DUAL/GUARANTEED PAGE---------------------------------------------------*/
+
+#dual-button {
+	height: 50px;
+	width: 170px;
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #01529B;
+	background-color: #FFCF02;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+}
+
+#dual-button:hover {
+	background-color: #FFF;
+}
+
+#dual-button:active {
+	  background-color: #FFB800;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+.modal1 {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal1-content {
+	background-color: #FFF;
+	color: #000;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	line-height: 2;
+	width: 80%;
+}
+
+.close1 {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.dual-wrapper a:link {
+	color: #FFCF06;
+	text-decoration: none;
+}
+
+.dual-wrapper a:visited {
+	color: #FFCF06;	
+}
+
+.dual-wrapper a:hover {
+	color: #FFF;	
+}
+
+.dual-tab {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #105A96;
+}
+
+.dual-tab button {
+	background-color: inherit;
+	color: #fff;
+	/* float: left; */
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 18px;
+	padding: 14px 16px;
+	transition: 0.3s;
+}
+
+.dual-tab button:hover {
+	background-color: #FFCF06;
+	color: #333;
+}
+
+.dual-tab button.active2 {
+	background-color: #FFCF06;
+	color: #333;
+}
+
+.dual-wrapper {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+}
+
+.tabcontent2 {
+	display: none;
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+	color: #fff;
+}
+
+.tab-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	height: auto;
+	padding-bottom: 50px;
+}
+
+.dual-school {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #105A96;
+	width: 250px;
+	height: 200px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	padding-left: 8px;
+}
+
+.dual-school ul {
+	list-style-position: inside;
+	list-style-type: none;
+}
+
+
+/*----------------------------------------------------INTENT TO ENROLL FORMS PAGE---------------------------------------------------*/
+.ITE-wrapper {
+	display: flex;
+	justify-content: space-evenly;
+	line-height: 2.5;
+	background-color: #01529B;
+	padding: 50px;
+}
+
+.ITE-wrapper a:link {
+	color: #FFCF06;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.ITE-wrapper a:visited {
+	color: #FFCF06;
+}
+
+.ITE-wrapper a:hover {
+	color: gray;
+}
+
+.ITE-wrapper p {
+	color: #FFF;
+}
+
+
+/*----------------------------------------------------PROGRAM-TO-PROGRAM PAGE---------------------------------------------------*/
+.page-title2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 60px;
+	height: 250px;
+}
+
+.p2p-tab {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #105A96;
+}
+
+.p2p-tab button {
+	background-color: inherit;
+	color: #fff;
+	/* float: left; */
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 18px;
+	padding: 14px 16px;
+	transition: 0.3s;
+}
+
+.p2p-tab button:hover {
+	background-color: #FFCF06;
+	color: #333;
+}
+
+.p2p-tab button.active3 {
+	background-color: #FFCF06;
+	color: #333;
+}
+
+.p2p-wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+}
+
+.p2p-wrapper a {
+	color: #105A96;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.p2p-wrapper a:visited {
+	color: #105A96;
+}
+
+.p2p-wrapper a:hover {
+	color: #FFCF06;
+}
+
+.tabcontent3 {
+	display: none;
+	width: 100%;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border: 1px solid #ccc;
+	border-top: none;
+	color: #333;
+	background-color: #fff;
+}
+
+.p2p-school {
+	padding-bottom: 50px;
+}
+
+#statep2p {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#statep2p p {
+	line-height: 2; 
+}
+
+.indent2 {
+	text-indent: 30px;
+}
+
+/*----------------------------------------------------SHARED PAGE---------------------------------------------------*/
+.shared-wrapper {
+	display: flex;
+	background-color: #01529B;
+	padding: 10px;
+}
+
+.shared-wrapper h3 {
+	color: #FFF;
+}
+
+.shared-content1,.shared-content2 {
+	flex-basis: 50%;
+}
+
+.shared-content1 {
+	border-right: 5px solid #fff;
+	padding-right: 3px;
+	height: auto;
+}
+
+.shared-content2 {
+	padding-left: 3px;
+}
+
+.shared-chart1, .shared-chart2 {
+	font-size: 14px;
+}
+
+.shared-chart1 tr:nth-child(odd) {
+	color: #000;
+	background-color: lightgray;
+}
+
+.shared-chart2 tr:nth-child(odd) {
+	color: #000;
+	background-color: lightgray;
+}
+
+.shared-chart1 tr:nth-child(even) {
+	color: #fff;
+}
+
+.shared-chart2 tr:nth-child(even) {
+	color: #fff;
+}
+
+.shared-chart1 th, td {
+	padding: 9px;
+}
+
+.shared-chart2 th, td {
+	padding: 9px;
+}
+
+.shared-chart1 th {
+	text-transform: uppercase;
+}
+
+.shared-chart2 th {
+	text-transform: uppercase;
+}
+
+/*----------------------------------------------------ON-CAMPUS EVENTS PAGE---------------------------------------------------*/
+
+.visitscal {
+	border: none;
+	height: 550px;
+	width: 100%;
+}
+
+/*----------------------------------------------------TRANSFER INFORMATION MONTH PAGE---------------------------------------------------*/
+
+
+/*----------------------------------------------------GEN EDS PAGE---------------------------------------------------*/
+
+.geneds-wrapper {
+	background-color: #01529B;
+	padding: 50px;
+	line-height: 3;
+}
+
+.geneds-wrapper a:link {
+	color: #FFCF06;
+	text-decoration: none;
+}
+
+.geneds-wrapper a:visited {
+	color: #FFCF06;
+}
+
+.geneds-wrapper a:hover {
+	color: gray;
+}
+
+
+.gened-heading {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.indent3 {
+	text-indent: 40px;
+}
+
+/*----------------------------------------------------NURSING PAGE---------------------------------------------------*/
+
+.nursing-wrapper {
+	padding-bottom: 50px;
+}
+
+.nurs-row1 {
+	display: flex;
+	justify-content: space-around;
+	border: 1px solid #fff;
+	background-color: #01529B;
+	padding: 20px;
+	margin-bottom: 50px;
+}
+
+.nurs-row2 {
+	display: flex;
+	justify-content: space-around;
+	border: 1px solid #fff;
+	background-color: #01529B;
+	line-height: 2.5;
+	padding: 20px;
+}
+
+.nursing-wrapper a:link {
+	color: #FFCF06;
+	text-decoration: none;
+}
+
+.nursing-wrapper a:visited {
+	color: #fff;
+}
+
+.nursing-wrapper a:hover {
+	color: #fff;
+}
+
+.nursing-wrapper h3 {
+	color: #fff;
+}
+
+.indent4 {
+	text-indent: 40px;
+}
 
 /*----------------------------------------------------ONLINE PAGE---------------------------------------------------*/
 .page-title2 {
@@ -357,395 +874,6 @@ header h1 {
 	font-style: italic;
 }
 
-/*----------------------------------------------------DUAL/GUARANTEED PAGE---------------------------------------------------*/
-.page-title3 {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	margin-bottom: 60px;
-	height: 230px;
-}
-
-.page-title3 h2 {
-	text-align: center;
-}
-
-#dual-button {
-	width: 200px;
-	padding: 10px;
-	background-color: transparent;
-	color: #FFF;
-	outline: 2px solid #FFF;
-	outline-style: inset;
-	font-style: italic; 
-}
-
-#dual-button:hover {
-	background-color: #FFCF06;
-	color: #333;
-}
-
-.modal1 {
-	display: none;
-	position: fixed;
-	z-index: 1;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-	background-color: rgb(0,0,0); /* Fallback color */
-	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-.modal1-content {
-	background-color: #FFF;
-	color: #000;
-	margin: 15% auto;
-	padding: 20px;
-	border: 1px solid #888;
-	line-height: 2;
-	width: 80%;
-}
-
-.close1 {
-	color: #aaa;
-	float: right;
-	font-size: 28px;
-	font-weight: bold;
-}
-
-.close1:hover,
-.close1:focus {
-	color: black;
-	text-decoration: none;
-	cursor: pointer;
-}
-
-.dual-wrapper a {
-	color: #FFCF06;
-	text-decoration: none;
-}
-
-.dual-wrapper a:hover {
-	color: #333;	
-}
-
-.dual-tab {
-	overflow: hidden;
-	border: 1px solid #ccc;
-	background-color: #105A96;
-}
-
-.dual-tab button {
-	background-color: inherit;
-	color: #fff;
-	float: left;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	padding: 14px 16px;
-	transition: 0.3s;
-}
-
-.dual-tab button:hover {
-	background-color: #FFCF06;
-	color: #333;
-}
-
-.dual-tab button.active2 {
-	background-color: #FFCF06;
-	color: #333;
-}
-
-.dual-wrapper {
-	width: 100%;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	align-items:center;
-}
-
-.tabcontent2 {
-	display: none;
-	width: 100%;
-	height: 100%;
-	padding: 5px;
-	color: #fff;
-}
-
-.tab-wrapper {
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	height: auto;
-	padding-bottom: 50px;
-}
-
-.dual-school {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	background-color: #105A96;
-	width: 250px;
-	height: 175px;
-	margin-top: 20px;
-	margin-bottom: 5px;
-	margin-right: 5px;
-	padding-left: 8px;
-}
-
-.dual-school ul {
-	list-style-position: inside;
-	list-style-type: none;
-}
-
-
-/*----------------------------------------------------INTENT TO ENROLL FORMS PAGE---------------------------------------------------*/
-.ITE-wrapper {
-	display: flex;
-	justify-content: space-around;
-	line-height: 2.3;
-}
-
-.ITE-wrapper a {
-	color: #FFF;
-	text-decoration: none;
-	font-weight: bold;
-}
-
-.ITE-wrapper a:hover {
-	color: #FFCF06;
-}
-
-/*----------------------------------------------------PROGRAM-TO-PROGRAM PAGE---------------------------------------------------*/
-.page-title4 {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	margin-bottom: 60px;
-	height: 250px;
-}
-
-.page-title4 h2 {
-	text-align: center;
-}
-
-.p2p-tab {
-	overflow: hidden;
-	border: 1px solid #ccc;
-	background-color: #105A96;
-}
-
-.p2p-tab button {
-	background-color: inherit;
-	color: #fff;
-	float: left;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	padding: 14px 16px;
-	transition: 0.3s;
-}
-
-.p2p-tab button:hover {
-	background-color: #FFCF06;
-	color: #333;
-}
-
-.p2p-tab button.active3 {
-	background-color: #FFCF06;
-	color: #333;
-}
-
-.p2p-wrapper {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items:center;
-}
-
-.p2p-wrapper a {
-	color: #105A96;
-	text-decoration: none;
-	font-weight: bold;
-}
-
-.p2p-wrapper a:visited {
-	color: #105A96;
-}
-
-.p2p-wrapper a:hover {
-	color: #FFCF06;
-}
-
-.tabcontent3 {
-	display: none;
-	width: 100%;
-	padding-left: 50px;
-	padding-right: 50px;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	border: 1px solid #ccc;
-	border-top: none;
-	color: #333;
-	background-color: #fff;
-}
-
-.p2p-school {
-	padding-bottom: 50px;
-}
-
-#statep2p {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-}
-
-#statep2p p {
-	line-height: 2; 
-}
-
-.indent2 {
-	text-indent: 30px;
-}
-
-/*----------------------------------------------------SHARED PAGE---------------------------------------------------*/
-.shared-wrapper {
-	display: flex;
-}
-
-.shared-content1,.shared-content2 {
-	flex-basis: 50%;
-}
-
-.shared-content1 {
-	border-right: 5px solid #fff;
-	padding-right: 3px;
-}
-
-.shared-content2 {
-	padding-left: 3px;
-}
-
-.shared-chart1, .shared-chart2 {
-	font-size: 14px;
-}
-
-.shared-chart1 tr:nth-child(odd) {
-	color: #000;
-	background-color: gray;
-}
-
-.shared-chart2 tr:nth-child(odd) {
-	color: #000;
-	background-color: gray;
-}
-
-.shared-chart1 tr:nth-child(even) {
-	color: #fff;
-}
-
-.shared-chart2 tr:nth-child(even) {
-	color: #fff;
-}
-
-.shared-chart1 th, td {
-	padding: 9px;
-}
-
-.shared-chart2 th, td {
-	padding: 9px;
-}
-
-.shared-chart1 th {
-	text-transform: uppercase;
-}
-
-.shared-chart2 th {
-	text-transform: uppercase;
-}
-
-/*----------------------------------------------------ON-CAMPUS EVENTS PAGE---------------------------------------------------*/
-
-.visitscal {
-	border: none;
-	height: 550px;
-	width: 100%;
-}
-
-
-/*----------------------------------------------------GEN EDS PAGE---------------------------------------------------*/
-.page-title5 {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	margin-bottom: 60px;
-	height: 100px;
-}
-
-
-.geneds-wrapper {
-	display: flex;
-	justify-content: space-around;
-	line-height: 3;
-}
-
-.geneds-wrapper a {
-	color: #FFCF01;
-	text-decoration: none;
-}
-
-.geneds-wrapper a:hover {
-	color: #fff;
-}
-
-
-.gened-heading {
-	color: #fff;
-	text-decoration: underline;
-}
-
-.indent3 {
-	text-indent: 40px;
-}
-
-/*----------------------------------------------------NURSING PAGE---------------------------------------------------*/
-
-.nursing-wrapper {
-	padding-bottom: 50px;
-}
-
-.nurs-row1 {
-	display: flex;
-	justify-content: space-around;
-	border: 1px solid #fff;
-	background-color: rgba(0,0,0,.2);
-	padding: 20px;
-	margin-bottom: 50px;
-}
-
-.nurs-row2 {
-	display: flex;
-	justify-content: space-around;
-	border: 1px solid #fff;
-	background-color: rgba(0,0,0,.2);
-	line-height: 2.5;
-	padding: 20px;
-}
-
-.nursing-wrapper a {
-	color: #FFCF01;
-	text-decoration: none;
-}
-
-.nursing-wrapper a:hover {
-	color: #fff;
-}
-
-.indent4 {
-	text-indent: 40px;
-}
 
 /*----------------------------------------------------TRANSFER PREP PAGE---------------------------------------------------*/
 .prep-wrapper {
